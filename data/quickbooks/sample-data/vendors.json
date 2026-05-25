@@ -1,0 +1,20 @@
+[
+  {
+    "id": "office-supply-co",
+    "name": "Office Supply Co",
+    "category": "Office expenses",
+    "balance": 215
+  },
+  {
+    "id": "city-utilities",
+    "name": "City Utilities",
+    "category": "Utilities",
+    "balance": 142.5
+  },
+  {
+    "id": "metro-rentals",
+    "name": "Metro Rentals",
+    "category": "Rent or lease",
+    "balance": 1850
+  }
+]

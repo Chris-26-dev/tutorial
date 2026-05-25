@@ -1,0 +1,199 @@
+{
+  "platform": "quickbooks",
+  "module": "payroll",
+  "lessons": [
+    {
+      "id": "adding-an-employee",
+      "title": "Adding an Employee",
+      "platform": "quickbooks",
+      "module": "payroll",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Add employee",
+          "instruction": "Click Add employee in the Payroll center.",
+          "highlightTarget": "employee-add",
+          "action": {
+            "type": "click",
+            "target": "employee-add",
+            "feedback": {
+              "correct": "Employee form opened.",
+              "incorrect": "Click Add employee at the top of the Payroll center."
+            }
+          },
+          "simulatorState": "payroll-employee"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Enter employee name",
+          "instruction": "Type Morgan Lee in the employee name field.",
+          "highlightTarget": "employee-name",
+          "action": {
+            "type": "input",
+            "target": "employee-name",
+            "expectedValue": "Morgan Lee",
+            "feedback": {
+              "correct": "Employee name entered.",
+              "incorrect": "Enter Morgan Lee in the employee name field."
+            }
+          },
+          "simulatorState": "payroll-employee"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Save employee",
+          "instruction": "Click Save employee.",
+          "highlightTarget": "employee-save",
+          "action": {
+            "type": "click",
+            "target": "employee-save",
+            "feedback": {
+              "correct": "Employee saved for payroll.",
+              "incorrect": "Click Save employee."
+            }
+          },
+          "simulatorState": "payroll-employee"
+        }
+      ],
+      "quiz": {
+        "question": "What must exist before running payroll for a worker?",
+        "options": ["An employee profile", "A credit memo", "A bank rule", "A custom report column"],
+        "correctAnswer": "An employee profile",
+        "explanation": "Payroll needs employee details before paychecks can be calculated."
+      },
+      "completionMessage": "You added an employee profile to the payroll center."
+    },
+    {
+      "id": "running-payroll",
+      "title": "Running Payroll",
+      "platform": "quickbooks",
+      "module": "payroll",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Start payroll",
+          "instruction": "Click Run payroll.",
+          "highlightTarget": "payroll-run",
+          "action": {
+            "type": "click",
+            "target": "payroll-run",
+            "feedback": {
+              "correct": "Payroll run started.",
+              "incorrect": "Click Run payroll in the Payroll center."
+            }
+          },
+          "simulatorState": "payroll-run"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Preview payroll",
+          "instruction": "Click Preview payroll to review totals.",
+          "highlightTarget": "payroll-preview",
+          "action": {
+            "type": "click",
+            "target": "payroll-preview",
+            "feedback": {
+              "correct": "Payroll totals are visible.",
+              "incorrect": "Click Preview payroll before submitting."
+            }
+          },
+          "simulatorState": "payroll-run"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Submit payroll",
+          "instruction": "Click Submit payroll.",
+          "highlightTarget": "payroll-submit",
+          "action": {
+            "type": "click",
+            "target": "payroll-submit",
+            "feedback": {
+              "correct": "Payroll submitted in the simulator.",
+              "incorrect": "Click Submit payroll after previewing."
+            }
+          },
+          "simulatorState": "payroll-run"
+        }
+      ],
+      "quiz": {
+        "question": "Why preview payroll before submitting?",
+        "options": ["To verify pay and tax totals", "To send invoices", "To import bank lines", "To rename accounts"],
+        "correctAnswer": "To verify pay and tax totals",
+        "explanation": "Previewing payroll helps catch pay-rate, hour, and tax issues before submission."
+      },
+      "completionMessage": "You previewed and submitted a simulated payroll run."
+    },
+    {
+      "id": "payroll-taxes-overview",
+      "title": "Payroll Taxes Overview",
+      "platform": "quickbooks",
+      "module": "payroll",
+      "type": "guided",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open tax center",
+          "instruction": "Click Payroll tax center.",
+          "highlightTarget": "tax-center",
+          "action": {
+            "type": "click",
+            "target": "tax-center",
+            "feedback": {
+              "correct": "Payroll tax center opened.",
+              "incorrect": "Click Payroll tax center in the payroll navigation."
+            }
+          },
+          "simulatorState": "payroll-taxes"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Review liability",
+          "instruction": "Click the Federal withholding liability row.",
+          "highlightTarget": "tax-liability-row",
+          "action": {
+            "type": "click",
+            "target": "tax-liability-row",
+            "feedback": {
+              "correct": "Liability details are visible.",
+              "incorrect": "Click the Federal withholding row."
+            }
+          },
+          "simulatorState": "payroll-taxes"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Mark reviewed",
+          "instruction": "Click Mark reviewed.",
+          "highlightTarget": "tax-mark-reviewed",
+          "action": {
+            "type": "click",
+            "target": "tax-mark-reviewed",
+            "feedback": {
+              "correct": "Payroll tax item reviewed.",
+              "incorrect": "Click Mark reviewed on the liability detail."
+            }
+          },
+          "simulatorState": "payroll-taxes"
+        }
+      ],
+      "quiz": {
+        "question": "What does a payroll tax center help monitor?",
+        "options": ["Tax liabilities and filing reminders", "Customer email templates", "Receipt attachments", "Inventory quantities"],
+        "correctAnswer": "Tax liabilities and filing reminders",
+        "explanation": "Payroll tax tools summarize amounts due and upcoming tax tasks."
+      },
+      "completionMessage": "You reviewed payroll tax liabilities and reminders."
+    }
+  ]
+}

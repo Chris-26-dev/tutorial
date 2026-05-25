@@ -1,0 +1,26 @@
+[
+  {
+    "id": "qb-bank-001",
+    "date": "2026-05-03",
+    "description": "Office Supply Co",
+    "amount": -215,
+    "category": "Uncategorized Expense",
+    "status": "for-review"
+  },
+  {
+    "id": "qb-bank-002",
+    "date": "2026-05-06",
+    "description": "Acme Corp Payment",
+    "amount": 1240,
+    "category": "Accounts receivable",
+    "status": "matched"
+  },
+  {
+    "id": "qb-bank-003",
+    "date": "2026-05-08",
+    "description": "City Utilities",
+    "amount": -142.5,
+    "category": "Utilities",
+    "status": "reconciled"
+  }
+]

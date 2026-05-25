@@ -1,0 +1,281 @@
+{
+  "platform": "xero",
+  "module": "banking",
+  "lessons": [
+    {
+      "id": "adding-a-bank-account",
+      "title": "Adding a Bank Account",
+      "platform": "xero",
+      "module": "banking",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Add bank account",
+          "instruction": "Click Add bank account.",
+          "highlightTarget": "bank-add-account",
+          "action": {
+            "type": "click",
+            "target": "bank-add-account",
+            "feedback": {
+              "correct": "Bank search opened.",
+              "incorrect": "Click Add bank account in Accounting."
+            }
+          },
+          "simulatorState": "bank-connect"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Search bank",
+          "instruction": "Type Metro Bank into the search field.",
+          "highlightTarget": "bank-search-bank",
+          "action": {
+            "type": "input",
+            "target": "bank-search-bank",
+            "expectedValue": "Metro Bank",
+            "feedback": {
+              "correct": "Metro Bank found.",
+              "incorrect": "Enter Metro Bank in the search field."
+            }
+          },
+          "simulatorState": "bank-connect"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Connect feed",
+          "instruction": "Click Connect feed.",
+          "highlightTarget": "bank-connect",
+          "action": {
+            "type": "click",
+            "target": "bank-connect",
+            "feedback": {
+              "correct": "Bank feed connected in the simulator.",
+              "incorrect": "Click Connect feed."
+            }
+          },
+          "simulatorState": "bank-connect"
+        }
+      ],
+      "quiz": {
+        "question": "What does a bank feed provide?",
+        "options": ["Imported bank transactions", "Employee tax codes", "Customer logos", "Report color themes"],
+        "correctAnswer": "Imported bank transactions",
+        "explanation": "Bank feeds bring bank activity into Xero for reconciliation."
+      },
+      "completionMessage": "You added a simulated bank account in Xero."
+    },
+    {
+      "id": "importing-bank-statements",
+      "title": "Importing Bank Statements",
+      "platform": "xero",
+      "module": "banking",
+      "type": "guided",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Start import",
+          "instruction": "Click Import statement.",
+          "highlightTarget": "bank-import",
+          "action": {
+            "type": "click",
+            "target": "bank-import",
+            "feedback": {
+              "correct": "Statement import opened.",
+              "incorrect": "Click Import statement on the bank account."
+            }
+          },
+          "simulatorState": "bank-feed"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose file",
+          "instruction": "Click the CSV statement file placeholder.",
+          "highlightTarget": "statement-file",
+          "action": {
+            "type": "click",
+            "target": "statement-file",
+            "feedback": {
+              "correct": "Sample CSV file selected.",
+              "incorrect": "Click the CSV statement file placeholder."
+            }
+          },
+          "simulatorState": "bank-feed"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Import rows",
+          "instruction": "Click Import transactions.",
+          "highlightTarget": "statement-import",
+          "action": {
+            "type": "click",
+            "target": "statement-import",
+            "feedback": {
+              "correct": "Statement transactions imported.",
+              "incorrect": "Click Import transactions."
+            }
+          },
+          "simulatorState": "bank-feed"
+        }
+      ],
+      "quiz": {
+        "question": "When might you import a statement manually?",
+        "options": ["When a bank feed is unavailable", "When creating a credit note", "When approving leave", "When changing an invoice contact"],
+        "correctAnswer": "When a bank feed is unavailable",
+        "explanation": "Manual statement imports are useful when automatic feeds are not connected or complete."
+      },
+      "completionMessage": "You imported a simulated bank statement."
+    },
+    {
+      "id": "bank-reconciliation",
+      "title": "Bank Reconciliation",
+      "platform": "xero",
+      "module": "banking",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open reconcile",
+          "instruction": "Click Reconcile on the Business Bank card.",
+          "highlightTarget": "bank-review-tab",
+          "action": {
+            "type": "click",
+            "target": "bank-review-tab",
+            "feedback": {
+              "correct": "Reconciliation screen opened.",
+              "incorrect": "Click Reconcile on the bank account card."
+            }
+          },
+          "simulatorState": "bank-feed"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Open statement line",
+          "instruction": "Click the Bright Office Supplies statement line.",
+          "highlightTarget": "bank-transaction-row",
+          "action": {
+            "type": "click",
+            "target": "bank-transaction-row",
+            "feedback": {
+              "correct": "Statement line expanded.",
+              "incorrect": "Click the Bright Office Supplies row."
+            }
+          },
+          "simulatorState": "bank-feed"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Reconcile line",
+          "instruction": "Click OK to reconcile the matched line.",
+          "highlightTarget": "bank-accept",
+          "action": {
+            "type": "click",
+            "target": "bank-accept",
+            "feedback": {
+              "correct": "Statement line reconciled.",
+              "incorrect": "Click OK on the reconciliation panel."
+            }
+          },
+          "simulatorState": "bank-feed"
+        }
+      ],
+      "quiz": {
+        "question": "What does OK do in Xero bank reconciliation?",
+        "options": ["Confirms the match or coding for a statement line", "Approves payroll", "Deletes the report", "Creates a customer contact"],
+        "correctAnswer": "Confirms the match or coding for a statement line",
+        "explanation": "Clicking OK accepts the reconciliation treatment for that statement line."
+      },
+      "completionMessage": "You reconciled a statement line in Xero."
+    },
+    {
+      "id": "creating-rules",
+      "title": "Creating Rules",
+      "platform": "xero",
+      "module": "banking",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Create rule",
+          "instruction": "Click Create bank rule.",
+          "highlightTarget": "bank-rule-create",
+          "action": {
+            "type": "click",
+            "target": "bank-rule-create",
+            "feedback": {
+              "correct": "Bank rule form opened.",
+              "incorrect": "Click Create bank rule."
+            }
+          },
+          "simulatorState": "transaction-match"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Add condition",
+          "instruction": "Type Cloud Hosting into the condition field.",
+          "highlightTarget": "rule-condition",
+          "action": {
+            "type": "input",
+            "target": "rule-condition",
+            "expectedValue": "Cloud Hosting",
+            "feedback": {
+              "correct": "Condition entered.",
+              "incorrect": "Enter Cloud Hosting as the rule condition."
+            }
+          },
+          "simulatorState": "transaction-match"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Choose account",
+          "instruction": "Choose Subscriptions as the account.",
+          "highlightTarget": "transaction-category",
+          "action": {
+            "type": "select",
+            "target": "transaction-category",
+            "expectedValue": "subscriptions",
+            "feedback": {
+              "correct": "Rule account selected.",
+              "incorrect": "Choose Subscriptions from the account field."
+            }
+          },
+          "simulatorState": "transaction-match"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Save rule",
+          "instruction": "Click Save rule.",
+          "highlightTarget": "rule-save",
+          "action": {
+            "type": "click",
+            "target": "rule-save",
+            "feedback": {
+              "correct": "Bank rule saved.",
+              "incorrect": "Click Save rule."
+            }
+          },
+          "simulatorState": "transaction-match"
+        }
+      ],
+      "quiz": {
+        "question": "What is a bank rule useful for?",
+        "options": ["Automatically coding recurring statement lines", "Changing an organisation name", "Approving invoices", "Posting leave requests"],
+        "correctAnswer": "Automatically coding recurring statement lines",
+        "explanation": "Rules help Xero suggest consistent coding for recurring bank activity."
+      },
+      "completionMessage": "You created a Xero bank rule for recurring charges."
+    }
+  ]
+}

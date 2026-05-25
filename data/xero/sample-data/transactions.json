@@ -1,0 +1,26 @@
+[
+  {
+    "id": "xe-bank-001",
+    "date": "2026-05-04",
+    "payee": "Bright Office Supplies",
+    "amount": -310,
+    "account": "Office expenses",
+    "status": "unreconciled"
+  },
+  {
+    "id": "xe-bank-002",
+    "date": "2026-05-07",
+    "payee": "Atlas Labs",
+    "amount": 1480,
+    "account": "Accounts receivable",
+    "status": "matched"
+  },
+  {
+    "id": "xe-bank-003",
+    "date": "2026-05-09",
+    "payee": "Cloud Hosting",
+    "amount": -89,
+    "account": "Subscriptions",
+    "status": "reconciled"
+  }
+]

@@ -1,0 +1,199 @@
+{
+  "platform": "xero",
+  "module": "payroll",
+  "lessons": [
+    {
+      "id": "adding-employees",
+      "title": "Adding Employees",
+      "platform": "xero",
+      "module": "payroll",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Add employee",
+          "instruction": "Click Add employee.",
+          "highlightTarget": "employee-add",
+          "action": {
+            "type": "click",
+            "target": "employee-add",
+            "feedback": {
+              "correct": "Employee form opened.",
+              "incorrect": "Click Add employee in Payroll."
+            }
+          },
+          "simulatorState": "payroll-employee"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Enter employee name",
+          "instruction": "Type Morgan Lee in the employee name field.",
+          "highlightTarget": "employee-name",
+          "action": {
+            "type": "input",
+            "target": "employee-name",
+            "expectedValue": "Morgan Lee",
+            "feedback": {
+              "correct": "Employee name entered.",
+              "incorrect": "Enter Morgan Lee in the employee name field."
+            }
+          },
+          "simulatorState": "payroll-employee"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Save employee",
+          "instruction": "Click Save employee.",
+          "highlightTarget": "employee-save",
+          "action": {
+            "type": "click",
+            "target": "employee-save",
+            "feedback": {
+              "correct": "Employee saved.",
+              "incorrect": "Click Save employee."
+            }
+          },
+          "simulatorState": "payroll-employee"
+        }
+      ],
+      "quiz": {
+        "question": "What is the first payroll record needed for an employee?",
+        "options": ["An employee profile", "A bank statement import", "A credit note", "A budget report"],
+        "correctAnswer": "An employee profile",
+        "explanation": "The employee profile stores payroll details used in pay runs."
+      },
+      "completionMessage": "You added a payroll employee in Xero."
+    },
+    {
+      "id": "processing-pay-runs",
+      "title": "Processing Pay Runs",
+      "platform": "xero",
+      "module": "payroll",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Start pay run",
+          "instruction": "Click New pay run.",
+          "highlightTarget": "payroll-run",
+          "action": {
+            "type": "click",
+            "target": "payroll-run",
+            "feedback": {
+              "correct": "Pay run started.",
+              "incorrect": "Click New pay run."
+            }
+          },
+          "simulatorState": "payroll-run"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Review draft",
+          "instruction": "Click Preview pay run.",
+          "highlightTarget": "payroll-preview",
+          "action": {
+            "type": "click",
+            "target": "payroll-preview",
+            "feedback": {
+              "correct": "Draft pay run totals are visible.",
+              "incorrect": "Click Preview pay run."
+            }
+          },
+          "simulatorState": "payroll-run"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Post pay run",
+          "instruction": "Click Post pay run.",
+          "highlightTarget": "payroll-submit",
+          "action": {
+            "type": "click",
+            "target": "payroll-submit",
+            "feedback": {
+              "correct": "Pay run posted.",
+              "incorrect": "Click Post pay run after reviewing."
+            }
+          },
+          "simulatorState": "payroll-run"
+        }
+      ],
+      "quiz": {
+        "question": "What should be reviewed before posting a pay run?",
+        "options": ["Employee pay and tax totals", "Customer invoice colors", "Bank rule names only", "Report export format"],
+        "correctAnswer": "Employee pay and tax totals",
+        "explanation": "Reviewing a draft pay run helps catch payroll issues before posting."
+      },
+      "completionMessage": "You processed a simulated Xero pay run."
+    },
+    {
+      "id": "leave-management",
+      "title": "Leave Management",
+      "platform": "xero",
+      "module": "payroll",
+      "type": "guided",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open leave request",
+          "instruction": "Click Morgan Lee's leave request.",
+          "highlightTarget": "leave-request-row",
+          "action": {
+            "type": "click",
+            "target": "leave-request-row",
+            "feedback": {
+              "correct": "Leave request opened.",
+              "incorrect": "Click Morgan Lee's leave request row."
+            }
+          },
+          "simulatorState": "leave-management"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Review calendar",
+          "instruction": "Click the leave calendar preview.",
+          "highlightTarget": "leave-calendar",
+          "action": {
+            "type": "click",
+            "target": "leave-calendar",
+            "feedback": {
+              "correct": "Calendar reviewed.",
+              "incorrect": "Click the leave calendar preview."
+            }
+          },
+          "simulatorState": "leave-management"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Approve leave",
+          "instruction": "Click Approve leave.",
+          "highlightTarget": "leave-approve",
+          "action": {
+            "type": "click",
+            "target": "leave-approve",
+            "feedback": {
+              "correct": "Leave approved.",
+              "incorrect": "Click Approve leave."
+            }
+          },
+          "simulatorState": "leave-management"
+        }
+      ],
+      "quiz": {
+        "question": "Why review the leave calendar before approving?",
+        "options": ["To check dates and team coverage", "To reconcile bank lines", "To send invoices", "To change the chart of accounts"],
+        "correctAnswer": "To check dates and team coverage",
+        "explanation": "Calendar review helps confirm leave dates before approval."
+      },
+      "completionMessage": "You reviewed and approved a leave request."
+    }
+  ]
+}

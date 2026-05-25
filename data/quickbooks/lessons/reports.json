@@ -1,0 +1,264 @@
+{
+  "platform": "quickbooks",
+  "module": "reports",
+  "lessons": [
+    {
+      "id": "profit-loss-report",
+      "title": "Profit & Loss Report",
+      "platform": "quickbooks",
+      "module": "reports",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open reports",
+          "instruction": "Click Reports in the left navigation.",
+          "highlightTarget": "reports-nav",
+          "action": {
+            "type": "click",
+            "target": "reports-nav",
+            "feedback": {
+              "correct": "Reports list opened.",
+              "incorrect": "Click Reports in the sidebar."
+            }
+          },
+          "simulatorState": "reports-list"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose Profit & Loss",
+          "instruction": "Click Profit & Loss in the favorites list.",
+          "highlightTarget": "reports-profit-loss",
+          "action": {
+            "type": "click",
+            "target": "reports-profit-loss",
+            "feedback": {
+              "correct": "Profit & Loss report opened.",
+              "incorrect": "Click Profit & Loss in the report list."
+            }
+          },
+          "simulatorState": "reports-list"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Run report",
+          "instruction": "Click Run report.",
+          "highlightTarget": "report-run",
+          "action": {
+            "type": "click",
+            "target": "report-run",
+            "feedback": {
+              "correct": "Report refreshed.",
+              "incorrect": "Click Run report above the report table."
+            }
+          },
+          "simulatorState": "report-detail"
+        }
+      ],
+      "quiz": {
+        "question": "What does a Profit & Loss report summarize?",
+        "options": ["Income and expenses", "Only bank passwords", "Employee addresses", "Invoice email templates"],
+        "correctAnswer": "Income and expenses",
+        "explanation": "Profit & Loss summarizes revenue, expenses, and net income for a period."
+      },
+      "completionMessage": "You opened and ran the Profit & Loss report."
+    },
+    {
+      "id": "balance-sheet",
+      "title": "Balance Sheet",
+      "platform": "quickbooks",
+      "module": "reports",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open balance sheet",
+          "instruction": "Click Balance Sheet from the reports list.",
+          "highlightTarget": "reports-balance-sheet",
+          "action": {
+            "type": "click",
+            "target": "reports-balance-sheet",
+            "feedback": {
+              "correct": "Balance Sheet opened.",
+              "incorrect": "Click Balance Sheet in the report list."
+            }
+          },
+          "simulatorState": "reports-list"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose period",
+          "instruction": "Set the report period to This fiscal year.",
+          "highlightTarget": "report-period",
+          "action": {
+            "type": "select",
+            "target": "report-period",
+            "expectedValue": "this-fiscal-year",
+            "feedback": {
+              "correct": "Report period selected.",
+              "incorrect": "Choose This fiscal year from the period dropdown."
+            }
+          },
+          "simulatorState": "report-detail"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Run report",
+          "instruction": "Click Run report to refresh the Balance Sheet.",
+          "highlightTarget": "report-run",
+          "action": {
+            "type": "click",
+            "target": "report-run",
+            "feedback": {
+              "correct": "Balance Sheet refreshed.",
+              "incorrect": "Click Run report."
+            }
+          },
+          "simulatorState": "report-detail"
+        }
+      ],
+      "quiz": {
+        "question": "Which categories appear on a Balance Sheet?",
+        "options": ["Assets, liabilities, and equity", "Income, expenses, and payroll only", "Customers and vendors only", "Receipts and emails"],
+        "correctAnswer": "Assets, liabilities, and equity",
+        "explanation": "A Balance Sheet shows what the business owns, owes, and the owner's residual interest."
+      },
+      "completionMessage": "You selected a period and ran the Balance Sheet."
+    },
+    {
+      "id": "cash-flow-statement",
+      "title": "Cash Flow Statement",
+      "platform": "quickbooks",
+      "module": "reports",
+      "type": "guided",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open cash flow",
+          "instruction": "Click Statement of Cash Flows in the reports list.",
+          "highlightTarget": "reports-cash-flow",
+          "action": {
+            "type": "click",
+            "target": "reports-cash-flow",
+            "feedback": {
+              "correct": "Cash flow report opened.",
+              "incorrect": "Click Statement of Cash Flows."
+            }
+          },
+          "simulatorState": "reports-list"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Review operating cash",
+          "instruction": "Click the Operating activities section.",
+          "highlightTarget": "cash-flow-operating",
+          "action": {
+            "type": "click",
+            "target": "cash-flow-operating",
+            "feedback": {
+              "correct": "Operating cash details expanded.",
+              "incorrect": "Click Operating activities in the report."
+            }
+          },
+          "simulatorState": "report-detail"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Export report",
+          "instruction": "Click Export to prepare a spreadsheet copy.",
+          "highlightTarget": "report-export",
+          "action": {
+            "type": "click",
+            "target": "report-export",
+            "feedback": {
+              "correct": "Report export prepared.",
+              "incorrect": "Click Export above the report."
+            }
+          },
+          "simulatorState": "report-detail"
+        }
+      ],
+      "quiz": {
+        "question": "What does a Cash Flow Statement focus on?",
+        "options": ["Cash inflows and outflows", "Only customer names", "Only payroll addresses", "The app color palette"],
+        "correctAnswer": "Cash inflows and outflows",
+        "explanation": "Cash flow reports explain how cash moved through operating, investing, and financing activities."
+      },
+      "completionMessage": "You reviewed core sections of a cash flow report."
+    },
+    {
+      "id": "customizing-reports",
+      "title": "Customizing Reports",
+      "platform": "quickbooks",
+      "module": "reports",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open customize",
+          "instruction": "Click Customize on the report toolbar.",
+          "highlightTarget": "report-customize",
+          "action": {
+            "type": "click",
+            "target": "report-customize",
+            "feedback": {
+              "correct": "Customize panel opened.",
+              "incorrect": "Click Customize above the report."
+            }
+          },
+          "simulatorState": "report-customize"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Change columns",
+          "instruction": "Set Display columns by to Customers.",
+          "highlightTarget": "report-columns",
+          "action": {
+            "type": "select",
+            "target": "report-columns",
+            "expectedValue": "customers",
+            "feedback": {
+              "correct": "Columns will group results by customer.",
+              "incorrect": "Choose Customers from the Display columns by menu."
+            }
+          },
+          "simulatorState": "report-customize"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Apply changes",
+          "instruction": "Click Run report to apply the customization.",
+          "highlightTarget": "report-apply",
+          "action": {
+            "type": "click",
+            "target": "report-apply",
+            "feedback": {
+              "correct": "Customized report applied.",
+              "incorrect": "Click Run report in the customize panel."
+            }
+          },
+          "simulatorState": "report-customize"
+        }
+      ],
+      "quiz": {
+        "question": "Why customize a report?",
+        "options": ["To focus the report on the details you need", "To connect payroll taxes", "To create a receipt image", "To remove all customer balances"],
+        "correctAnswer": "To focus the report on the details you need",
+        "explanation": "Custom filters and columns make reports easier to analyze for a specific question."
+      },
+      "completionMessage": "You customized a QuickBooks report layout."
+    }
+  ]
+}

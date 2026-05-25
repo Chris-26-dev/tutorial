@@ -1,0 +1,264 @@
+{
+  "platform": "xero",
+  "module": "reports",
+  "lessons": [
+    {
+      "id": "profit-loss",
+      "title": "Profit & Loss",
+      "platform": "xero",
+      "module": "reports",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open reports",
+          "instruction": "Click Accounting, then Reports.",
+          "highlightTarget": "reports-nav",
+          "action": {
+            "type": "click",
+            "target": "reports-nav",
+            "feedback": {
+              "correct": "Reports area opened.",
+              "incorrect": "Click Reports in the Accounting menu."
+            }
+          },
+          "simulatorState": "reports-list"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose Profit and Loss",
+          "instruction": "Click Profit and Loss.",
+          "highlightTarget": "reports-profit-loss",
+          "action": {
+            "type": "click",
+            "target": "reports-profit-loss",
+            "feedback": {
+              "correct": "Profit and Loss report opened.",
+              "incorrect": "Click Profit and Loss in the report list."
+            }
+          },
+          "simulatorState": "reports-list"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Update report",
+          "instruction": "Click Update to run the report.",
+          "highlightTarget": "report-run",
+          "action": {
+            "type": "click",
+            "target": "report-run",
+            "feedback": {
+              "correct": "Report updated.",
+              "incorrect": "Click Update above the report."
+            }
+          },
+          "simulatorState": "report-detail"
+        }
+      ],
+      "quiz": {
+        "question": "What does Xero's Profit and Loss report show?",
+        "options": ["Revenue, expenses, and profit", "Only supplier addresses", "Only leave balances", "Bank passwords"],
+        "correctAnswer": "Revenue, expenses, and profit",
+        "explanation": "The Profit and Loss report summarizes business performance for a period."
+      },
+      "completionMessage": "You ran Xero's Profit and Loss report."
+    },
+    {
+      "id": "balance-sheet",
+      "title": "Balance Sheet",
+      "platform": "xero",
+      "module": "reports",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open balance sheet",
+          "instruction": "Click Balance Sheet.",
+          "highlightTarget": "reports-balance-sheet",
+          "action": {
+            "type": "click",
+            "target": "reports-balance-sheet",
+            "feedback": {
+              "correct": "Balance Sheet opened.",
+              "incorrect": "Click Balance Sheet in the reports list."
+            }
+          },
+          "simulatorState": "reports-list"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose date range",
+          "instruction": "Set the report period to This fiscal year.",
+          "highlightTarget": "report-period",
+          "action": {
+            "type": "select",
+            "target": "report-period",
+            "expectedValue": "this-fiscal-year",
+            "feedback": {
+              "correct": "Report period selected.",
+              "incorrect": "Choose This fiscal year from the period dropdown."
+            }
+          },
+          "simulatorState": "report-detail"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Update report",
+          "instruction": "Click Update.",
+          "highlightTarget": "report-run",
+          "action": {
+            "type": "click",
+            "target": "report-run",
+            "feedback": {
+              "correct": "Balance Sheet updated.",
+              "incorrect": "Click Update above the report."
+            }
+          },
+          "simulatorState": "report-detail"
+        }
+      ],
+      "quiz": {
+        "question": "A Balance Sheet reports which core groups?",
+        "options": ["Assets, liabilities, and equity", "Revenue and expenses only", "Customer notes only", "Payroll leave only"],
+        "correctAnswer": "Assets, liabilities, and equity",
+        "explanation": "Balance Sheets show financial position at a point in time."
+      },
+      "completionMessage": "You ran the Xero Balance Sheet."
+    },
+    {
+      "id": "aged-receivables",
+      "title": "Aged Receivables",
+      "platform": "xero",
+      "module": "reports",
+      "type": "guided",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open aged receivables",
+          "instruction": "Click Aged Receivables Summary.",
+          "highlightTarget": "reports-aged-receivables",
+          "action": {
+            "type": "click",
+            "target": "reports-aged-receivables",
+            "feedback": {
+              "correct": "Aged receivables report opened.",
+              "incorrect": "Click Aged Receivables Summary in the report list."
+            }
+          },
+          "simulatorState": "reports-list"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Review customer balance",
+          "instruction": "Click the Atlas Labs balance row.",
+          "highlightTarget": "aging-contact-row",
+          "action": {
+            "type": "click",
+            "target": "aging-contact-row",
+            "feedback": {
+              "correct": "Customer aging detail opened.",
+              "incorrect": "Click Atlas Labs in the report table."
+            }
+          },
+          "simulatorState": "report-detail"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Export report",
+          "instruction": "Click Export.",
+          "highlightTarget": "report-export",
+          "action": {
+            "type": "click",
+            "target": "report-export",
+            "feedback": {
+              "correct": "Aged receivables export prepared.",
+              "incorrect": "Click Export above the report."
+            }
+          },
+          "simulatorState": "report-detail"
+        }
+      ],
+      "quiz": {
+        "question": "What does an aged receivables report help identify?",
+        "options": ["Overdue customer balances", "Upcoming payroll leave", "Supplier bank rules", "Organisation timezone"],
+        "correctAnswer": "Overdue customer balances",
+        "explanation": "Aging reports group unpaid invoices by how long they have been outstanding."
+      },
+      "completionMessage": "You reviewed customer aging and prepared an export."
+    },
+    {
+      "id": "budget-manager",
+      "title": "Budget Manager",
+      "platform": "xero",
+      "module": "reports",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open budget manager",
+          "instruction": "Click Budget Manager.",
+          "highlightTarget": "budget-manager",
+          "action": {
+            "type": "click",
+            "target": "budget-manager",
+            "feedback": {
+              "correct": "Budget Manager opened.",
+              "incorrect": "Click Budget Manager in Reports."
+            }
+          },
+          "simulatorState": "report-customize"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose budget period",
+          "instruction": "Set the budget period to This fiscal year.",
+          "highlightTarget": "budget-period",
+          "action": {
+            "type": "select",
+            "target": "budget-period",
+            "expectedValue": "this-fiscal-year",
+            "feedback": {
+              "correct": "Budget period selected.",
+              "incorrect": "Choose This fiscal year from the budget period menu."
+            }
+          },
+          "simulatorState": "report-customize"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Save budget",
+          "instruction": "Click Save budget.",
+          "highlightTarget": "budget-save",
+          "action": {
+            "type": "click",
+            "target": "budget-save",
+            "feedback": {
+              "correct": "Budget saved.",
+              "incorrect": "Click Save budget."
+            }
+          },
+          "simulatorState": "report-customize"
+        }
+      ],
+      "quiz": {
+        "question": "What can Budget Manager support?",
+        "options": ["Comparing planned amounts to actual results", "Approving credit notes only", "Importing bank feeds", "Creating employee leave requests"],
+        "correctAnswer": "Comparing planned amounts to actual results",
+        "explanation": "Budgets give planned values that can be compared with actual financial performance."
+      },
+      "completionMessage": "You configured a simple budget period in Xero."
+    }
+  ]
+}

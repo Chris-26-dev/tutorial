@@ -1,0 +1,148 @@
+[
+  {
+    "id": "xe-inv-2041",
+    "contactId": "acme-corp",
+    "contactName": "Acme Corp",
+    "invoiceNumber": "INV-2041",
+    "reference": "May advisory",
+    "date": "2026-05-03",
+    "dueDate": "2026-05-28",
+    "status": "awaiting_payment",
+    "paid": 0,
+    "due": 1480,
+    "subtotal": 1360,
+    "tax": 120,
+    "total": 1480,
+    "notes": "Net 25 payment terms.",
+    "lineItems": [
+      { "description": "Monthly advisory", "quantity": 8, "unitPrice": 170, "discount": 0, "tax": 120, "amount": 1480 }
+    ],
+    "payments": [],
+    "activity": [
+      { "label": "Created", "date": "2026-05-03" },
+      { "label": "Sent", "date": "2026-05-04" }
+    ]
+  },
+  {
+    "id": "xe-inv-2042",
+    "contactId": "harbor-design",
+    "contactName": "Harbor Design Co",
+    "invoiceNumber": "INV-2042",
+    "reference": "Design sprint",
+    "date": "2026-05-08",
+    "dueDate": "2026-06-04",
+    "status": "awaiting_payment",
+    "paid": 0,
+    "due": 760,
+    "subtotal": 700,
+    "tax": 60,
+    "total": 760,
+    "notes": "Project milestone billing.",
+    "lineItems": [
+      { "description": "Design review", "quantity": 4, "unitPrice": 175, "discount": 0, "tax": 60, "amount": 760 }
+    ],
+    "payments": [],
+    "activity": [
+      { "label": "Created", "date": "2026-05-08" },
+      { "label": "Sent", "date": "2026-05-09" }
+    ]
+  },
+  {
+    "id": "xe-inv-2043",
+    "contactId": "northstar-studio",
+    "contactName": "Northstar Studio",
+    "invoiceNumber": "INV-2043",
+    "reference": "Retail setup",
+    "date": "2026-04-15",
+    "dueDate": "2026-04-30",
+    "status": "paid",
+    "paid": 950,
+    "due": 0,
+    "subtotal": 875,
+    "tax": 75,
+    "total": 950,
+    "notes": "Paid by bank transfer.",
+    "lineItems": [
+      { "description": "Implementation support", "quantity": 5, "unitPrice": 175, "discount": 0, "tax": 75, "amount": 950 }
+    ],
+    "payments": [
+      { "date": "2026-04-28", "amount": 950, "method": "Bank transfer", "reference": "PAY-9043" }
+    ],
+    "activity": [
+      { "label": "Created", "date": "2026-04-15" },
+      { "label": "Sent", "date": "2026-04-16" },
+      { "label": "Paid", "date": "2026-04-28" }
+    ]
+  },
+  {
+    "id": "xe-inv-2044",
+    "contactId": "acme-corp",
+    "contactName": "Acme Corp",
+    "invoiceNumber": "INV-2044",
+    "reference": "Workflow audit",
+    "date": "2026-04-05",
+    "dueDate": "2026-04-20",
+    "status": "overdue",
+    "paid": 0,
+    "due": 880,
+    "subtotal": 820,
+    "tax": 60,
+    "total": 880,
+    "notes": "Reminder sent.",
+    "lineItems": [
+      { "description": "Workflow audit", "quantity": 4, "unitPrice": 205, "discount": 0, "tax": 60, "amount": 880 }
+    ],
+    "payments": [],
+    "activity": [
+      { "label": "Created", "date": "2026-04-05" },
+      { "label": "Sent", "date": "2026-04-06" }
+    ]
+  },
+  {
+    "id": "xe-inv-2045",
+    "contactId": "harbor-design",
+    "contactName": "Harbor Design Co",
+    "invoiceNumber": "INV-2045",
+    "reference": "Monthly retainer",
+    "date": "2026-05-18",
+    "dueDate": "2026-06-18",
+    "status": "draft",
+    "paid": 0,
+    "due": 1200,
+    "subtotal": 1100,
+    "tax": 100,
+    "total": 1200,
+    "notes": "Draft pending approval.",
+    "lineItems": [
+      { "description": "Retainer", "quantity": 1, "unitPrice": 1100, "discount": 0, "tax": 100, "amount": 1200 }
+    ],
+    "payments": [],
+    "activity": [
+      { "label": "Created", "date": "2026-05-18" }
+    ]
+  },
+  {
+    "id": "xe-inv-2046",
+    "contactId": "northstar-studio",
+    "contactName": "Northstar Studio",
+    "invoiceNumber": "INV-2046",
+    "reference": "Repeating support",
+    "date": "2026-05-01",
+    "dueDate": "2026-06-01",
+    "status": "repeating",
+    "paid": 0,
+    "due": 640,
+    "subtotal": 600,
+    "tax": 40,
+    "total": 640,
+    "notes": "Repeats monthly.",
+    "lineItems": [
+      { "description": "Support package", "quantity": 1, "unitPrice": 600, "discount": 0, "tax": 40, "amount": 640 }
+    ],
+    "payments": [],
+    "activity": [
+      { "label": "Created", "date": "2026-05-01" },
+      { "label": "Scheduled", "date": "2026-05-01" }
+    ]
+  }
+]

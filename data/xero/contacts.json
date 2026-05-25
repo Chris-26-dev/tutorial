@@ -1,0 +1,80 @@
+[
+  {
+    "id": "acme-corp",
+    "name": "Acme Corp",
+    "email": "ap@acmecorp.example",
+    "phone": "(415) 555-0140",
+    "type": "customer",
+    "group": "Strategic Accounts",
+    "address": "120 Market Street, San Francisco, CA 94105",
+    "taxNumber": "US-ACME-2049",
+    "outstandingReceivable": 2360,
+    "outstandingPayable": 0,
+    "lastActivity": "2026-05-20"
+  },
+  {
+    "id": "harbor-design",
+    "name": "Harbor Design Co",
+    "email": "billing@harbordesign.example",
+    "phone": "(206) 555-0178",
+    "type": "both",
+    "group": "Design Partners",
+    "address": "88 Pier Avenue, Seattle, WA 98101",
+    "taxNumber": "US-HARBOR-1180",
+    "outstandingReceivable": 680,
+    "outstandingPayable": 420,
+    "lastActivity": "2026-05-18"
+  },
+  {
+    "id": "northstar-studio",
+    "name": "Northstar Studio",
+    "email": "finance@northstar.example",
+    "phone": "(312) 555-0192",
+    "type": "customer",
+    "group": "Retail",
+    "address": "42 State Street, Chicago, IL 60601",
+    "taxNumber": "US-NORTH-7712",
+    "outstandingReceivable": 0,
+    "outstandingPayable": 0,
+    "lastActivity": "2026-05-15"
+  },
+  {
+    "id": "office-supply-co",
+    "name": "Office Supply Co",
+    "email": "orders@officesupply.example",
+    "phone": "(303) 555-0116",
+    "type": "supplier",
+    "group": "Operations",
+    "address": "500 Paper Trail, Denver, CO 80202",
+    "taxNumber": "US-OFFICE-4401",
+    "outstandingReceivable": 0,
+    "outstandingPayable": 214.5,
+    "lastActivity": "2026-05-21"
+  },
+  {
+    "id": "city-utilities",
+    "name": "City Utilities",
+    "email": "accounts@cityutilities.example",
+    "phone": "(503) 555-0133",
+    "type": "supplier",
+    "group": "Utilities",
+    "address": "12 Civic Plaza, Portland, OR 97204",
+    "taxNumber": "US-CITY-9018",
+    "outstandingReceivable": 0,
+    "outstandingPayable": 142.5,
+    "lastActivity": "2026-05-22"
+  },
+  {
+    "id": "metro-rentals",
+    "name": "Metro Rentals",
+    "email": "billing@metrorentals.example",
+    "phone": "(617) 555-0159",
+    "type": "supplier",
+    "group": "Facilities",
+    "address": "74 Beacon Road, Boston, MA 02108",
+    "taxNumber": "US-METRO-6635",
+    "outstandingReceivable": 0,
+    "outstandingPayable": 1850,
+    "lastActivity": "2026-05-19"
+  }
+]

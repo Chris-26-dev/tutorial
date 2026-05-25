@@ -1,0 +1,330 @@
+{
+  "platform": "quickbooks",
+  "module": "invoicing",
+  "lessons": [
+    {
+      "id": "creating-an-invoice",
+      "title": "Creating an Invoice",
+      "platform": "quickbooks",
+      "module": "invoicing",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open the New menu",
+          "instruction": "Click the + New button in the left navigation.",
+          "highlightTarget": "new-button",
+          "action": {
+            "type": "click",
+            "target": "new-button",
+            "feedback": {
+              "correct": "The New menu is open.",
+              "incorrect": "Try the green + New button near the top left."
+            }
+          },
+          "simulatorState": "dashboard"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose Invoice",
+          "instruction": "Under Customers, click Invoice.",
+          "highlightTarget": "menu-invoice",
+          "action": {
+            "type": "click",
+            "target": "menu-invoice",
+            "feedback": {
+              "correct": "The invoice form is open.",
+              "incorrect": "Look under the Customers heading in the New menu."
+            }
+          },
+          "simulatorState": "new-menu-open"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Select the customer",
+          "instruction": "Choose Acme Corp from the Customer dropdown.",
+          "highlightTarget": "customer-select",
+          "action": {
+            "type": "select",
+            "target": "customer-select",
+            "expectedValue": "acme-corp",
+            "feedback": {
+              "correct": "Customer selected.",
+              "incorrect": "Choose Acme Corp from the Customer dropdown."
+            }
+          },
+          "simulatorState": "invoice-form"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Save the invoice",
+          "instruction": "Click Save to record the draft invoice.",
+          "highlightTarget": "invoice-save",
+          "action": {
+            "type": "click",
+            "target": "invoice-save",
+            "feedback": {
+              "correct": "Invoice saved as a draft.",
+              "incorrect": "Click the Save button at the bottom of the invoice."
+            }
+          },
+          "simulatorState": "invoice-form"
+        }
+      ],
+      "quiz": {
+        "question": "Which section contains Invoice after clicking + New?",
+        "options": ["Customers", "Vendors", "Employees", "Other"],
+        "correctAnswer": "Customers",
+        "explanation": "Invoices are created for customers, so QuickBooks places them under Customers."
+      },
+      "completionMessage": "You created a draft customer invoice in the QuickBooks simulator."
+    },
+    {
+      "id": "sending-to-customer",
+      "title": "Sending to Customer",
+      "platform": "quickbooks",
+      "module": "invoicing",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open the invoice",
+          "instruction": "Click the Acme Corp invoice row.",
+          "highlightTarget": "invoice-row",
+          "action": {
+            "type": "click",
+            "target": "invoice-row",
+            "feedback": {
+              "correct": "Invoice details are open.",
+              "incorrect": "Select the invoice row for Acme Corp."
+            }
+          },
+          "simulatorState": "invoice-review"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Start sending",
+          "instruction": "Click Review and send.",
+          "highlightTarget": "invoice-send",
+          "action": {
+            "type": "click",
+            "target": "invoice-send",
+            "feedback": {
+              "correct": "The email preview is ready.",
+              "incorrect": "Click Review and send on the invoice toolbar."
+            }
+          },
+          "simulatorState": "invoice-review"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Preview the email",
+          "instruction": "Click the email preview panel.",
+          "highlightTarget": "email-preview",
+          "action": {
+            "type": "click",
+            "target": "email-preview",
+            "feedback": {
+              "correct": "Preview checked.",
+              "incorrect": "Click inside the email preview area."
+            }
+          },
+          "simulatorState": "invoice-review"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Send the invoice",
+          "instruction": "Click Send invoice.",
+          "highlightTarget": "send-confirm",
+          "action": {
+            "type": "click",
+            "target": "send-confirm",
+            "feedback": {
+              "correct": "Invoice sent to the customer.",
+              "incorrect": "Click Send invoice in the preview."
+            }
+          },
+          "simulatorState": "invoice-review"
+        }
+      ],
+      "quiz": {
+        "question": "What should you check before sending an invoice?",
+        "options": ["The email preview", "The payroll tax center", "The bank rule list", "The expense claim queue"],
+        "correctAnswer": "The email preview",
+        "explanation": "Reviewing the email helps confirm the recipient and customer-facing message."
+      },
+      "completionMessage": "You reviewed and sent a customer invoice."
+    },
+    {
+      "id": "recording-a-payment",
+      "title": "Recording a Payment",
+      "platform": "quickbooks",
+      "module": "invoicing",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open Receive payment",
+          "instruction": "Click Receive payment from the invoice actions.",
+          "highlightTarget": "receive-payment",
+          "action": {
+            "type": "click",
+            "target": "receive-payment",
+            "feedback": {
+              "correct": "The payment form is open.",
+              "incorrect": "Click Receive payment in the invoice actions."
+            }
+          },
+          "simulatorState": "payment-form"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose the invoice",
+          "instruction": "Select invoice qb-inv-1002 in the open transactions list.",
+          "highlightTarget": "payment-invoice",
+          "action": {
+            "type": "select",
+            "target": "payment-invoice",
+            "expectedValue": "qb-inv-1002",
+            "feedback": {
+              "correct": "The payment is applied to the selected invoice.",
+              "incorrect": "Choose qb-inv-1002 from the invoice list."
+            }
+          },
+          "simulatorState": "payment-form"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Choose deposit account",
+          "instruction": "Set Deposit to to Checking.",
+          "highlightTarget": "payment-account",
+          "action": {
+            "type": "select",
+            "target": "payment-account",
+            "expectedValue": "checking",
+            "feedback": {
+              "correct": "The payment will increase the checking account.",
+              "incorrect": "Choose Checking for the deposit account."
+            }
+          },
+          "simulatorState": "payment-form"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Save the payment",
+          "instruction": "Click Save and close.",
+          "highlightTarget": "payment-save",
+          "action": {
+            "type": "click",
+            "target": "payment-save",
+            "feedback": {
+              "correct": "Payment recorded.",
+              "incorrect": "Click Save and close at the bottom of the payment form."
+            }
+          },
+          "simulatorState": "payment-form"
+        }
+      ],
+      "quiz": {
+        "question": "What happens when a customer payment is recorded against an invoice?",
+        "options": ["The invoice balance decreases", "A new vendor bill is created", "Payroll starts", "The chart of accounts is deleted"],
+        "correctAnswer": "The invoice balance decreases",
+        "explanation": "Recording payment applies cash to the invoice and reduces the amount still owed."
+      },
+      "completionMessage": "You applied a customer payment to an invoice."
+    },
+    {
+      "id": "credit-memos",
+      "title": "Credit Memos",
+      "platform": "quickbooks",
+      "module": "invoicing",
+      "type": "guided",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open the New menu",
+          "instruction": "Click + New to start a customer credit.",
+          "highlightTarget": "new-button",
+          "action": {
+            "type": "click",
+            "target": "new-button",
+            "feedback": {
+              "correct": "The New menu is open.",
+              "incorrect": "Click the green + New button."
+            }
+          },
+          "simulatorState": "dashboard"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose Credit memo",
+          "instruction": "Click Credit memo under Customers.",
+          "highlightTarget": "menu-credit-memo",
+          "action": {
+            "type": "click",
+            "target": "menu-credit-memo",
+            "feedback": {
+              "correct": "The credit memo form is open.",
+              "incorrect": "Choose Credit memo from the Customers column."
+            }
+          },
+          "simulatorState": "new-menu-open"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Choose the customer",
+          "instruction": "Select Acme Corp as the customer receiving the credit.",
+          "highlightTarget": "credit-customer",
+          "action": {
+            "type": "select",
+            "target": "credit-customer",
+            "expectedValue": "acme-corp",
+            "feedback": {
+              "correct": "Customer selected for the credit memo.",
+              "incorrect": "Choose Acme Corp from the Customer dropdown."
+            }
+          },
+          "simulatorState": "credit-memo-form"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Save the credit",
+          "instruction": "Click Save to record the credit memo.",
+          "highlightTarget": "credit-save",
+          "action": {
+            "type": "click",
+            "target": "credit-save",
+            "feedback": {
+              "correct": "Credit memo saved.",
+              "incorrect": "Click Save on the credit memo form."
+            }
+          },
+          "simulatorState": "credit-memo-form"
+        }
+      ],
+      "quiz": {
+        "question": "When would you create a credit memo?",
+        "options": ["When reducing what a customer owes", "When adding a new employee", "When importing a bank statement", "When changing the company name"],
+        "correctAnswer": "When reducing what a customer owes",
+        "explanation": "A credit memo records a credit that can reduce a customer's open balance."
+      },
+      "completionMessage": "You created a customer credit memo."
+    }
+  ]
+}

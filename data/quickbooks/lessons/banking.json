@@ -1,0 +1,265 @@
+{
+  "platform": "quickbooks",
+  "module": "banking",
+  "lessons": [
+    {
+      "id": "connecting-a-bank-account",
+      "title": "Connecting a Bank Account",
+      "platform": "quickbooks",
+      "module": "banking",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Start connection",
+          "instruction": "Click Link account in the Banking area.",
+          "highlightTarget": "bank-add-account",
+          "action": {
+            "type": "click",
+            "target": "bank-add-account",
+            "feedback": {
+              "correct": "The bank search panel is open.",
+              "incorrect": "Click Link account in the upper right of Banking."
+            }
+          },
+          "simulatorState": "bank-connect"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Search for the bank",
+          "instruction": "Type Citywide Bank into the bank search field.",
+          "highlightTarget": "bank-search-bank",
+          "action": {
+            "type": "input",
+            "target": "bank-search-bank",
+            "expectedValue": "Citywide Bank",
+            "feedback": {
+              "correct": "Citywide Bank found.",
+              "incorrect": "Enter Citywide Bank in the search field."
+            }
+          },
+          "simulatorState": "bank-connect"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Connect account",
+          "instruction": "Click Connect checking to complete the simulated connection.",
+          "highlightTarget": "bank-connect",
+          "action": {
+            "type": "click",
+            "target": "bank-connect",
+            "feedback": {
+              "correct": "Checking account connected.",
+              "incorrect": "Click Connect checking."
+            }
+          },
+          "simulatorState": "bank-connect"
+        }
+      ],
+      "quiz": {
+        "question": "Why connect a bank account to QuickBooks?",
+        "options": ["To import transactions for review", "To remove all categories", "To create employee profiles", "To hide reports"],
+        "correctAnswer": "To import transactions for review",
+        "explanation": "Bank feeds bring transactions into QuickBooks so you can match, categorize, and reconcile them."
+      },
+      "completionMessage": "You connected a simulated bank feed."
+    },
+    {
+      "id": "reviewing-transactions",
+      "title": "Reviewing Transactions",
+      "platform": "quickbooks",
+      "module": "banking",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open review tab",
+          "instruction": "Click the For review tab.",
+          "highlightTarget": "bank-review-tab",
+          "action": {
+            "type": "click",
+            "target": "bank-review-tab",
+            "feedback": {
+              "correct": "For review transactions are shown.",
+              "incorrect": "Click the For review tab in Banking."
+            }
+          },
+          "simulatorState": "bank-feed"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Select transaction",
+          "instruction": "Click the Office Supply Co transaction row.",
+          "highlightTarget": "bank-transaction-row",
+          "action": {
+            "type": "click",
+            "target": "bank-transaction-row",
+            "feedback": {
+              "correct": "Transaction details expanded.",
+              "incorrect": "Click the Office Supply Co row."
+            }
+          },
+          "simulatorState": "bank-feed"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Accept transaction",
+          "instruction": "Click Accept to add the reviewed transaction.",
+          "highlightTarget": "bank-accept",
+          "action": {
+            "type": "click",
+            "target": "bank-accept",
+            "feedback": {
+              "correct": "Transaction accepted.",
+              "incorrect": "Click Accept on the transaction detail."
+            }
+          },
+          "simulatorState": "bank-feed"
+        }
+      ],
+      "quiz": {
+        "question": "What should you do before accepting a bank feed transaction?",
+        "options": ["Confirm its category and details", "Delete the bank account", "Run payroll", "Create a credit memo"],
+        "correctAnswer": "Confirm its category and details",
+        "explanation": "Reviewing details prevents transactions from posting to the wrong accounts."
+      },
+      "completionMessage": "You reviewed and accepted a bank-feed transaction."
+    },
+    {
+      "id": "bank-reconciliation",
+      "title": "Bank Reconciliation",
+      "platform": "quickbooks",
+      "module": "banking",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Start reconciling",
+          "instruction": "Click Start reconciling for Checking.",
+          "highlightTarget": "reconcile-start",
+          "action": {
+            "type": "click",
+            "target": "reconcile-start",
+            "feedback": {
+              "correct": "Reconciliation setup opened.",
+              "incorrect": "Click Start reconciling on the Checking account."
+            }
+          },
+          "simulatorState": "bank-reconciliation"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Enter statement balance",
+          "instruction": "Enter 12840.50 as the ending balance.",
+          "highlightTarget": "statement-ending-balance",
+          "action": {
+            "type": "input",
+            "target": "statement-ending-balance",
+            "expectedValue": "12840.50",
+            "feedback": {
+              "correct": "Ending balance entered.",
+              "incorrect": "Enter 12840.50 in the ending balance field."
+            }
+          },
+          "simulatorState": "bank-reconciliation"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Finish reconciliation",
+          "instruction": "Click Finish now after the difference reaches zero.",
+          "highlightTarget": "reconcile-finish",
+          "action": {
+            "type": "click",
+            "target": "reconcile-finish",
+            "feedback": {
+              "correct": "Reconciliation completed.",
+              "incorrect": "Click Finish now once the difference is zero."
+            }
+          },
+          "simulatorState": "bank-reconciliation"
+        }
+      ],
+      "quiz": {
+        "question": "What is the goal of bank reconciliation?",
+        "options": ["Match the books to the bank statement", "Create a new invoice template", "Change a customer address", "Open the payroll center"],
+        "correctAnswer": "Match the books to the bank statement",
+        "explanation": "Reconciliation confirms that recorded transactions agree with the bank statement."
+      },
+      "completionMessage": "You completed a simulated bank reconciliation."
+    },
+    {
+      "id": "matching-transactions",
+      "title": "Matching Transactions",
+      "platform": "quickbooks",
+      "module": "banking",
+      "type": "guided",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Find a match",
+          "instruction": "Click Find match on the Acme Corp deposit.",
+          "highlightTarget": "match-find",
+          "action": {
+            "type": "click",
+            "target": "match-find",
+            "feedback": {
+              "correct": "Potential matches are shown.",
+              "incorrect": "Click Find match on the Acme Corp deposit row."
+            }
+          },
+          "simulatorState": "transaction-match"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Select the invoice",
+          "instruction": "Choose invoice qb-inv-1001 as the match.",
+          "highlightTarget": "match-select-invoice",
+          "action": {
+            "type": "select",
+            "target": "match-select-invoice",
+            "expectedValue": "qb-inv-1001",
+            "feedback": {
+              "correct": "Invoice selected as the match.",
+              "incorrect": "Choose qb-inv-1001 from the match list."
+            }
+          },
+          "simulatorState": "transaction-match"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Confirm match",
+          "instruction": "Click Match to connect the bank deposit to the invoice.",
+          "highlightTarget": "match-confirm",
+          "action": {
+            "type": "click",
+            "target": "match-confirm",
+            "feedback": {
+              "correct": "Transaction matched.",
+              "incorrect": "Click Match after selecting the invoice."
+            }
+          },
+          "simulatorState": "transaction-match"
+        }
+      ],
+      "quiz": {
+        "question": "Why match a bank deposit to an invoice instead of adding it as new income?",
+        "options": ["To avoid duplicating revenue", "To create a new vendor", "To close payroll", "To erase the receipt"],
+        "correctAnswer": "To avoid duplicating revenue",
+        "explanation": "Matching links the bank line to an existing record, preventing duplicate income."
+      },
+      "completionMessage": "You matched a bank deposit to an existing invoice."
+    }
+  ]
+}

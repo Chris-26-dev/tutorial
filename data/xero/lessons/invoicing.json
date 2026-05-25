@@ -1,0 +1,330 @@
+{
+  "platform": "xero",
+  "module": "invoicing",
+  "lessons": [
+    {
+      "id": "creating-a-sales-invoice",
+      "title": "Creating a Sales Invoice",
+      "platform": "xero",
+      "module": "invoicing",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open Business",
+          "instruction": "Click the Business menu.",
+          "highlightTarget": "business-menu",
+          "action": {
+            "type": "click",
+            "target": "business-menu",
+            "feedback": {
+              "correct": "Business menu opened.",
+              "incorrect": "Click Business in the top navigation."
+            }
+          },
+          "simulatorState": "dashboard"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Open invoices",
+          "instruction": "Click Invoices in the Business menu.",
+          "highlightTarget": "menu-invoices",
+          "action": {
+            "type": "click",
+            "target": "menu-invoices",
+            "feedback": {
+              "correct": "Invoices workspace opened.",
+              "incorrect": "Click Invoices in the Business menu."
+            }
+          },
+          "simulatorState": "new-menu-open"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Choose contact",
+          "instruction": "Select Atlas Labs as the invoice contact.",
+          "highlightTarget": "customer-select",
+          "action": {
+            "type": "select",
+            "target": "customer-select",
+            "expectedValue": "atlas-labs",
+            "feedback": {
+              "correct": "Contact selected.",
+              "incorrect": "Choose Atlas Labs from the contact dropdown."
+            }
+          },
+          "simulatorState": "invoice-form"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Save draft",
+          "instruction": "Click Save as draft.",
+          "highlightTarget": "invoice-save",
+          "action": {
+            "type": "click",
+            "target": "invoice-save",
+            "feedback": {
+              "correct": "Sales invoice saved as a draft.",
+              "incorrect": "Click Save as draft at the bottom of the invoice."
+            }
+          },
+          "simulatorState": "invoice-form"
+        }
+      ],
+      "quiz": {
+        "question": "Where do you start a sales invoice in Xero?",
+        "options": ["Business menu", "Payroll settings", "Account watchlist", "Bank rules only"],
+        "correctAnswer": "Business menu",
+        "explanation": "Xero groups sales invoices under the Business menu."
+      },
+      "completionMessage": "You created a draft sales invoice in Xero."
+    },
+    {
+      "id": "approving-and-sending",
+      "title": "Approving and Sending",
+      "platform": "xero",
+      "module": "invoicing",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open invoice",
+          "instruction": "Click the Atlas Labs invoice row.",
+          "highlightTarget": "invoice-row",
+          "action": {
+            "type": "click",
+            "target": "invoice-row",
+            "feedback": {
+              "correct": "Invoice opened for approval.",
+              "incorrect": "Click the Atlas Labs invoice row."
+            }
+          },
+          "simulatorState": "invoice-review"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Approve invoice",
+          "instruction": "Click Approve.",
+          "highlightTarget": "invoice-approve",
+          "action": {
+            "type": "click",
+            "target": "invoice-approve",
+            "feedback": {
+              "correct": "Invoice approved.",
+              "incorrect": "Click Approve on the invoice toolbar."
+            }
+          },
+          "simulatorState": "invoice-review"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Review email",
+          "instruction": "Click the email preview panel.",
+          "highlightTarget": "email-preview",
+          "action": {
+            "type": "click",
+            "target": "email-preview",
+            "feedback": {
+              "correct": "Email preview reviewed.",
+              "incorrect": "Click the email preview panel."
+            }
+          },
+          "simulatorState": "invoice-review"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Send invoice",
+          "instruction": "Click Send.",
+          "highlightTarget": "send-confirm",
+          "action": {
+            "type": "click",
+            "target": "send-confirm",
+            "feedback": {
+              "correct": "Invoice sent.",
+              "incorrect": "Click Send in the email preview."
+            }
+          },
+          "simulatorState": "invoice-review"
+        }
+      ],
+      "quiz": {
+        "question": "What must usually happen before a Xero invoice can be sent as final?",
+        "options": ["It is approved", "It is deleted", "It becomes a bank rule", "It becomes an employee profile"],
+        "correctAnswer": "It is approved",
+        "explanation": "Approving turns a draft invoice into an official invoice ready to send."
+      },
+      "completionMessage": "You approved and sent a Xero sales invoice."
+    },
+    {
+      "id": "recording-payment",
+      "title": "Recording Payment",
+      "platform": "xero",
+      "module": "invoicing",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Add payment",
+          "instruction": "Click Add payment on the approved invoice.",
+          "highlightTarget": "receive-payment",
+          "action": {
+            "type": "click",
+            "target": "receive-payment",
+            "feedback": {
+              "correct": "Payment section opened.",
+              "incorrect": "Click Add payment on the invoice."
+            }
+          },
+          "simulatorState": "payment-form"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Select invoice",
+          "instruction": "Select invoice xe-inv-2042.",
+          "highlightTarget": "payment-invoice",
+          "action": {
+            "type": "select",
+            "target": "payment-invoice",
+            "expectedValue": "xe-inv-2042",
+            "feedback": {
+              "correct": "Invoice selected.",
+              "incorrect": "Choose xe-inv-2042 from the invoice dropdown."
+            }
+          },
+          "simulatorState": "payment-form"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Choose account",
+          "instruction": "Set Paid into to Business Bank.",
+          "highlightTarget": "payment-account",
+          "action": {
+            "type": "select",
+            "target": "payment-account",
+            "expectedValue": "business-bank",
+            "feedback": {
+              "correct": "Business Bank selected.",
+              "incorrect": "Choose Business Bank as the payment account."
+            }
+          },
+          "simulatorState": "payment-form"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Save payment",
+          "instruction": "Click Add payment.",
+          "highlightTarget": "payment-save",
+          "action": {
+            "type": "click",
+            "target": "payment-save",
+            "feedback": {
+              "correct": "Payment recorded.",
+              "incorrect": "Click Add payment at the bottom of the panel."
+            }
+          },
+          "simulatorState": "payment-form"
+        }
+      ],
+      "quiz": {
+        "question": "What does recording payment do to an invoice balance?",
+        "options": ["Reduces or clears the amount due", "Creates a supplier bill", "Deletes the contact", "Adds a bank rule"],
+        "correctAnswer": "Reduces or clears the amount due",
+        "explanation": "Payment recording marks all or part of the invoice as paid."
+      },
+      "completionMessage": "You recorded payment on an approved Xero invoice."
+    },
+    {
+      "id": "credit-notes",
+      "title": "Credit Notes",
+      "platform": "xero",
+      "module": "invoicing",
+      "type": "guided",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open Business",
+          "instruction": "Click the Business menu.",
+          "highlightTarget": "business-menu",
+          "action": {
+            "type": "click",
+            "target": "business-menu",
+            "feedback": {
+              "correct": "Business menu opened.",
+              "incorrect": "Click Business in the top navigation."
+            }
+          },
+          "simulatorState": "dashboard"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Create credit note",
+          "instruction": "Click Credit note.",
+          "highlightTarget": "menu-credit-note",
+          "action": {
+            "type": "click",
+            "target": "menu-credit-note",
+            "feedback": {
+              "correct": "Credit note form opened.",
+              "incorrect": "Click Credit note in the Business menu."
+            }
+          },
+          "simulatorState": "new-menu-open"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Choose contact",
+          "instruction": "Select Atlas Labs as the contact.",
+          "highlightTarget": "credit-customer",
+          "action": {
+            "type": "select",
+            "target": "credit-customer",
+            "expectedValue": "atlas-labs",
+            "feedback": {
+              "correct": "Contact selected.",
+              "incorrect": "Choose Atlas Labs from the contact menu."
+            }
+          },
+          "simulatorState": "credit-memo-form"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Approve credit note",
+          "instruction": "Click Approve credit note.",
+          "highlightTarget": "credit-save",
+          "action": {
+            "type": "click",
+            "target": "credit-save",
+            "feedback": {
+              "correct": "Credit note approved.",
+              "incorrect": "Click Approve credit note."
+            }
+          },
+          "simulatorState": "credit-memo-form"
+        }
+      ],
+      "quiz": {
+        "question": "What does a credit note usually do?",
+        "options": ["Reduces what a customer owes", "Runs payroll", "Imports statements", "Creates a new timezone"],
+        "correctAnswer": "Reduces what a customer owes",
+        "explanation": "Credit notes reduce or reverse customer billing amounts."
+      },
+      "completionMessage": "You created and approved a Xero credit note."
+    }
+  ]
+}

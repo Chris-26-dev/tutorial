@@ -1,0 +1,35 @@
+{
+  "profitAndLoss": [
+    { "month": "Dec 2025", "income": 32400, "costOfGoods": 8400, "grossProfit": 24000, "expenses": { "Software": 1720, "Utilities": 920, "Salaries": 12400, "Travel": 960, "Marketing": 2100, "Professional Services": 1800, "Office Supplies": 540, "Equipment": 700 }, "totalExpenses": 21140, "netProfit": 2860 },
+    { "month": "Jan 2026", "income": 36250, "costOfGoods": 9100, "grossProfit": 27150, "expenses": { "Software": 1810, "Utilities": 940, "Salaries": 12800, "Travel": 1220, "Marketing": 2600, "Professional Services": 2200, "Office Supplies": 610, "Equipment": 880 }, "totalExpenses": 23060, "netProfit": 4090 },
+    { "month": "Feb 2026", "income": 34880, "costOfGoods": 8750, "grossProfit": 26130, "expenses": { "Software": 1775, "Utilities": 915, "Salaries": 12600, "Travel": 1040, "Marketing": 2380, "Professional Services": 1960, "Office Supplies": 480, "Equipment": 760 }, "totalExpenses": 21910, "netProfit": 4220 },
+    { "month": "Mar 2026", "income": 38640, "costOfGoods": 9600, "grossProfit": 29040, "expenses": { "Software": 1950, "Utilities": 980, "Salaries": 13100, "Travel": 1340, "Marketing": 2820, "Professional Services": 2400, "Office Supplies": 570, "Equipment": 940 }, "totalExpenses": 24100, "netProfit": 4940 },
+    { "month": "Apr 2026", "income": 40210, "costOfGoods": 10120, "grossProfit": 30090, "expenses": { "Software": 2020, "Utilities": 1040, "Salaries": 13250, "Travel": 1180, "Marketing": 3020, "Professional Services": 2520, "Office Supplies": 620, "Equipment": 1120 }, "totalExpenses": 24770, "netProfit": 5320 },
+    { "month": "May 2026", "income": 43870, "costOfGoods": 10950, "grossProfit": 32920, "expenses": { "Software": 2210, "Utilities": 1120, "Salaries": 14200, "Travel": 1480, "Marketing": 3490, "Professional Services": 2940, "Office Supplies": 710, "Equipment": 1200 }, "totalExpenses": 27350, "netProfit": 5570 }
+  ],
+  "balanceSheet": {
+    "assets": { "Checking": 84620.45, "Savings": 42150, "Accounts Receivable": 1920, "Equipment": 18400, "Prepaid Expenses": 3600 },
+    "liabilities": { "Credit Card": 6420.88, "Accounts Payable": 2817.50, "Payroll Liabilities": 5140, "Sales Tax Payable": 1840 },
+    "equity": { "Owner Contributions": 52000, "Retained Earnings": 69502.07, "Current Year Earnings": 5570 }
+  },
+  "agedReceivables": [
+    { "customerId": "acme-corp", "name": "Acme Corp", "current": 1240, "days30": 0, "days60": 0, "days90": 0, "over90": 0, "total": 1240 },
+    { "customerId": "harbor-design", "name": "Harbor Design Co", "current": 680, "days30": 0, "days60": 0, "days90": 0, "over90": 0, "total": 680 },
+    { "customerId": "northstar-studio", "name": "Northstar Studio", "current": 0, "days30": 0, "days60": 0, "days90": 0, "over90": 0, "total": 0 }
+  ],
+  "expensesByCategory": [
+    { "category": "Salaries", "amount": 14200, "percentage": 51.92 },
+    { "category": "Marketing", "amount": 3490, "percentage": 12.76 },
+    { "category": "Professional Services", "amount": 2940, "percentage": 10.75 },
+    { "category": "Software", "amount": 2210, "percentage": 8.08 },
+    { "category": "Travel", "amount": 1480, "percentage": 5.41 },
+    { "category": "Equipment", "amount": 1200, "percentage": 4.39 },
+    { "category": "Utilities", "amount": 1120, "percentage": 4.09 },
+    { "category": "Office Supplies", "amount": 710, "percentage": 2.60 }
+  ],
+  "topCustomers": [
+    { "customerId": "acme-corp", "name": "Acme Corp", "totalRevenue": 18400, "invoiceCount": 9 },
+    { "customerId": "northstar-studio", "name": "Northstar Studio", "totalRevenue": 12650, "invoiceCount": 7 },
+    { "customerId": "harbor-design", "name": "Harbor Design Co", "totalRevenue": 9720, "invoiceCount": 6 }
+  ]
+}

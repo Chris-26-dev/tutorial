@@ -1,0 +1,23 @@
+[
+  {
+    "id": "qb-inv-1001",
+    "customerId": "acme-corp",
+    "status": "draft",
+    "total": 1240,
+    "dueDate": "2026-05-31"
+  },
+  {
+    "id": "qb-inv-1002",
+    "customerId": "harbor-design",
+    "status": "sent",
+    "total": 680,
+    "dueDate": "2026-06-05"
+  },
+  {
+    "id": "qb-inv-1003",
+    "customerId": "northstar-studio",
+    "status": "paid",
+    "total": 950,
+    "dueDate": "2026-04-30"
+  }
+]

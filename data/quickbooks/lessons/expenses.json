@@ -1,0 +1,282 @@
+{
+  "platform": "quickbooks",
+  "module": "expenses",
+  "lessons": [
+    {
+      "id": "recording-an-expense",
+      "title": "Recording an Expense",
+      "platform": "quickbooks",
+      "module": "expenses",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Create an expense",
+          "instruction": "Click Expense from the + New menu.",
+          "highlightTarget": "expense-new",
+          "action": {
+            "type": "click",
+            "target": "expense-new",
+            "feedback": {
+              "correct": "The expense form is ready.",
+              "incorrect": "Click Expense in the Vendors column."
+            }
+          },
+          "simulatorState": "expense-form"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose the payee",
+          "instruction": "Select Office Supply Co as the payee.",
+          "highlightTarget": "expense-payee",
+          "action": {
+            "type": "select",
+            "target": "expense-payee",
+            "expectedValue": "office-supply-co",
+            "feedback": {
+              "correct": "Payee selected.",
+              "incorrect": "Choose Office Supply Co from the Payee dropdown."
+            }
+          },
+          "simulatorState": "expense-form"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Choose a category",
+          "instruction": "Set the category to Office expenses.",
+          "highlightTarget": "expense-category",
+          "action": {
+            "type": "select",
+            "target": "expense-category",
+            "expectedValue": "office-expenses",
+            "feedback": {
+              "correct": "Category assigned.",
+              "incorrect": "Choose Office expenses as the category."
+            }
+          },
+          "simulatorState": "expense-form"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Save the expense",
+          "instruction": "Click Save to record the expense.",
+          "highlightTarget": "expense-save",
+          "action": {
+            "type": "click",
+            "target": "expense-save",
+            "feedback": {
+              "correct": "Expense saved.",
+              "incorrect": "Click Save at the bottom of the form."
+            }
+          },
+          "simulatorState": "expense-form"
+        }
+      ],
+      "quiz": {
+        "question": "Why is the expense category important?",
+        "options": ["It controls how the expense appears on reports", "It changes the customer email", "It opens payroll", "It deletes the bank feed"],
+        "correctAnswer": "It controls how the expense appears on reports",
+        "explanation": "Categories map expenses to accounts that appear on financial reports."
+      },
+      "completionMessage": "You recorded and categorized a business expense."
+    },
+    {
+      "id": "uploading-a-receipt",
+      "title": "Uploading a Receipt",
+      "platform": "quickbooks",
+      "module": "expenses",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open receipt upload",
+          "instruction": "Click Upload receipt.",
+          "highlightTarget": "receipt-upload-button",
+          "action": {
+            "type": "click",
+            "target": "receipt-upload-button",
+            "feedback": {
+              "correct": "Receipt capture is open.",
+              "incorrect": "Click the Upload receipt button."
+            }
+          },
+          "simulatorState": "receipt-upload"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Confirm vendor",
+          "instruction": "Select City Utilities as the vendor detected from the receipt.",
+          "highlightTarget": "receipt-vendor-field",
+          "action": {
+            "type": "select",
+            "target": "receipt-vendor-field",
+            "expectedValue": "city-utilities",
+            "feedback": {
+              "correct": "Vendor confirmed.",
+              "incorrect": "Choose City Utilities from the vendor field."
+            }
+          },
+          "simulatorState": "receipt-upload"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Add the receipt",
+          "instruction": "Click Add to attach the receipt to the books.",
+          "highlightTarget": "receipt-add",
+          "action": {
+            "type": "click",
+            "target": "receipt-add",
+            "feedback": {
+              "correct": "Receipt added for review.",
+              "incorrect": "Click Add after confirming the vendor."
+            }
+          },
+          "simulatorState": "receipt-upload"
+        }
+      ],
+      "quiz": {
+        "question": "What does attaching a receipt help preserve?",
+        "options": ["Source documentation", "A payroll schedule", "A sales forecast", "A user password"],
+        "correctAnswer": "Source documentation",
+        "explanation": "Receipts provide support for recorded expenses and can help during reviews."
+      },
+      "completionMessage": "You uploaded and attached a receipt for an expense."
+    },
+    {
+      "id": "categorizing-expenses",
+      "title": "Categorizing Expenses",
+      "platform": "quickbooks",
+      "module": "expenses",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open a bank line",
+          "instruction": "Click the Office Supply Co bank transaction.",
+          "highlightTarget": "bank-transaction-row",
+          "action": {
+            "type": "click",
+            "target": "bank-transaction-row",
+            "feedback": {
+              "correct": "The transaction detail is expanded.",
+              "incorrect": "Click the Office Supply Co row."
+            }
+          },
+          "simulatorState": "expense-categorization"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Assign category",
+          "instruction": "Choose Office expenses as the transaction category.",
+          "highlightTarget": "transaction-category",
+          "action": {
+            "type": "select",
+            "target": "transaction-category",
+            "expectedValue": "office-expenses",
+            "feedback": {
+              "correct": "The transaction is categorized.",
+              "incorrect": "Select Office expenses from the category menu."
+            }
+          },
+          "simulatorState": "expense-categorization"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Add the transaction",
+          "instruction": "Click Add to post the reviewed transaction.",
+          "highlightTarget": "transaction-add",
+          "action": {
+            "type": "click",
+            "target": "transaction-add",
+            "feedback": {
+              "correct": "Transaction added to the books.",
+              "incorrect": "Click Add on the transaction detail."
+            }
+          },
+          "simulatorState": "expense-categorization"
+        }
+      ],
+      "quiz": {
+        "question": "What does Add do in the bank feed review workflow?",
+        "options": ["Posts the reviewed bank line to the books", "Creates a new company file", "Sends a customer invoice", "Runs payroll taxes"],
+        "correctAnswer": "Posts the reviewed bank line to the books",
+        "explanation": "Adding a bank feed item records it using the selected category and details."
+      },
+      "completionMessage": "You reviewed, categorized, and added a bank-feed expense."
+    },
+    {
+      "id": "bill-payment",
+      "title": "Bill Payment",
+      "platform": "quickbooks",
+      "module": "expenses",
+      "type": "guided",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Create a bill",
+          "instruction": "Click Create bill for Metro Rentals.",
+          "highlightTarget": "bill-create",
+          "action": {
+            "type": "click",
+            "target": "bill-create",
+            "feedback": {
+              "correct": "The bill form is open.",
+              "incorrect": "Click Create bill on the vendor card."
+            }
+          },
+          "simulatorState": "bill-payment"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Set due date",
+          "instruction": "Choose the due date field and set the bill to due this month.",
+          "highlightTarget": "bill-due-date",
+          "action": {
+            "type": "click",
+            "target": "bill-due-date",
+            "feedback": {
+              "correct": "Due date reviewed.",
+              "incorrect": "Click the due date field on the bill."
+            }
+          },
+          "simulatorState": "bill-payment"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Pay the bill",
+          "instruction": "Click Schedule payment.",
+          "highlightTarget": "bill-pay",
+          "action": {
+            "type": "click",
+            "target": "bill-pay",
+            "feedback": {
+              "correct": "Bill payment scheduled.",
+              "incorrect": "Click Schedule payment."
+            }
+          },
+          "simulatorState": "bill-payment"
+        }
+      ],
+      "quiz": {
+        "question": "What is the difference between a bill and an expense in QuickBooks?",
+        "options": ["A bill records an amount to pay later", "A bill is only for customers", "A bill is a payroll tax form", "A bill cannot have a vendor"],
+        "correctAnswer": "A bill records an amount to pay later",
+        "explanation": "Bills track payables until you pay the vendor."
+      },
+      "completionMessage": "You created and scheduled a vendor bill payment."
+    }
+  ]
+}

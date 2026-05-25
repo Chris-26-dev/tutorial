@@ -1,0 +1,49 @@
+{
+  "profitAndLoss": [
+    { "month": "Dec 2025", "income": 33600, "costOfGoods": 8700, "grossProfit": 24900, "expenses": { "Software": 1690, "Utilities": 880, "Salaries": 12100, "Travel": 1020, "Marketing": 2180, "Professional Services": 1860, "Office Supplies": 520, "Equipment": 680 }, "totalExpenses": 20930, "netProfit": 3970 },
+    { "month": "Jan 2026", "income": 37150, "costOfGoods": 9400, "grossProfit": 27750, "expenses": { "Software": 1800, "Utilities": 930, "Salaries": 12650, "Travel": 1180, "Marketing": 2510, "Professional Services": 2110, "Office Supplies": 590, "Equipment": 820 }, "totalExpenses": 22590, "netProfit": 5160 },
+    { "month": "Feb 2026", "income": 35620, "costOfGoods": 8950, "grossProfit": 26670, "expenses": { "Software": 1760, "Utilities": 900, "Salaries": 12550, "Travel": 1070, "Marketing": 2360, "Professional Services": 2020, "Office Supplies": 470, "Equipment": 760 }, "totalExpenses": 21890, "netProfit": 4780 },
+    { "month": "Mar 2026", "income": 39420, "costOfGoods": 9810, "grossProfit": 29610, "expenses": { "Software": 1930, "Utilities": 960, "Salaries": 13020, "Travel": 1320, "Marketing": 2840, "Professional Services": 2390, "Office Supplies": 560, "Equipment": 930 }, "totalExpenses": 23950, "netProfit": 5660 },
+    { "month": "Apr 2026", "income": 41480, "costOfGoods": 10340, "grossProfit": 31140, "expenses": { "Software": 2005, "Utilities": 1010, "Salaries": 13240, "Travel": 1160, "Marketing": 3060, "Professional Services": 2510, "Office Supplies": 610, "Equipment": 1090 }, "totalExpenses": 24685, "netProfit": 6455 },
+    { "month": "May 2026", "income": 44950, "costOfGoods": 11120, "grossProfit": 33830, "expenses": { "Software": 2190, "Utilities": 1090, "Salaries": 14160, "Travel": 1510, "Marketing": 3520, "Professional Services": 2880, "Office Supplies": 700, "Equipment": 1160 }, "totalExpenses": 27210, "netProfit": 6620 }
+  ],
+  "balanceSheet": {
+    "assets": { "Business Current": 91380.25, "Tax Savings": 38950, "Accounts Receivable": 5040, "Equipment": 18400, "Prepayments": 3200 },
+    "liabilities": { "Corporate Card": 5218.42, "Accounts Payable": 2962.05, "Payroll Liabilities": 4980, "Sales Tax": 1760 },
+    "equity": { "Owner Funds Introduced": 52000, "Retained Earnings": 83549.78, "Current Year Earnings": 6620 }
+  },
+  "agedReceivables": [
+    { "contactId": "acme-corp", "name": "Acme Corp", "current": 1480, "days30": 880, "days60": 0, "days90": 0, "over90": 0, "total": 2360 },
+    { "contactId": "harbor-design", "name": "Harbor Design Co", "current": 680, "days30": 0, "days60": 0, "days90": 0, "over90": 0, "total": 680 },
+    { "contactId": "northstar-studio", "name": "Northstar Studio", "current": 0, "days30": 0, "days60": 0, "days90": 0, "over90": 0, "total": 0 }
+  ],
+  "agedPayables": [
+    { "contactId": "office-supply-co", "name": "Office Supply Co", "current": 233.26, "days30": 0, "days60": 0, "days90": 0, "over90": 0, "total": 233.26 },
+    { "contactId": "city-utilities", "name": "City Utilities", "current": 140.39, "days30": 318.40, "days60": 0, "days90": 0, "over90": 0, "total": 458.79 },
+    { "contactId": "metro-rentals", "name": "Metro Rentals", "current": 1850, "days30": 0, "days60": 0, "days90": 0, "over90": 0, "total": 1850 },
+    { "contactId": "harbor-design", "name": "Harbor Design Co", "current": 420, "days30": 0, "days60": 0, "days90": 0, "over90": 0, "total": 420 }
+  ],
+  "expensesByCategory": [
+    { "category": "Salaries", "amount": 14160, "percentage": 52.04 },
+    { "category": "Marketing", "amount": 3520, "percentage": 12.94 },
+    { "category": "Professional Services", "amount": 2880, "percentage": 10.58 },
+    { "category": "Software", "amount": 2190, "percentage": 8.05 },
+    { "category": "Travel", "amount": 1510, "percentage": 5.55 },
+    { "category": "Equipment", "amount": 1160, "percentage": 4.26 },
+    { "category": "Utilities", "amount": 1090, "percentage": 4.01 },
+    { "category": "Office Supplies", "amount": 700, "percentage": 2.57 }
+  ],
+  "cashSummary": [
+    { "month": "Dec 2025", "cashIn": 32000, "cashOut": 27600, "netMovement": 4400 },
+    { "month": "Jan 2026", "cashIn": 35400, "cashOut": 30100, "netMovement": 5300 },
+    { "month": "Feb 2026", "cashIn": 34750, "cashOut": 29880, "netMovement": 4870 },
+    { "month": "Mar 2026", "cashIn": 38200, "cashOut": 32100, "netMovement": 6100 },
+    { "month": "Apr 2026", "cashIn": 40700, "cashOut": 33920, "netMovement": 6780 },
+    { "month": "May 2026", "cashIn": 43100, "cashOut": 35840, "netMovement": 7260 }
+  ],
+  "topCustomers": [
+    { "contactId": "acme-corp", "name": "Acme Corp", "totalRevenue": 19180, "invoiceCount": 10 },
+    { "contactId": "northstar-studio", "name": "Northstar Studio", "totalRevenue": 13290, "invoiceCount": 8 },
+    { "contactId": "harbor-design", "name": "Harbor Design Co", "totalRevenue": 10820, "invoiceCount": 7 }
+  ]
+}

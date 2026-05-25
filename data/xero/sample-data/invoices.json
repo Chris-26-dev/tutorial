@@ -1,0 +1,23 @@
+[
+  {
+    "id": "xe-inv-2041",
+    "contactId": "atlas-labs",
+    "status": "awaiting-approval",
+    "total": 1480,
+    "dueDate": "2026-05-28"
+  },
+  {
+    "id": "xe-inv-2042",
+    "contactId": "atlas-labs",
+    "status": "approved",
+    "total": 760,
+    "dueDate": "2026-06-04"
+  },
+  {
+    "id": "xe-inv-2043",
+    "contactId": "bright-office",
+    "status": "paid",
+    "total": 310,
+    "dueDate": "2026-04-25"
+  }
+]

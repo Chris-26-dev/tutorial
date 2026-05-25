@@ -1,0 +1,5 @@
+[
+  { "id": "xe-bank-operating", "accountName": "Business Current", "bankName": "Blue Ocean Bank", "accountNumber": "9824", "type": "checking", "currentBalance": 91380.25, "availableBalance": 90780.25, "currency": "USD", "lastReconciled": "2026-05-17", "unreconciledCount": 8, "color": "#13B5EA", "sparkline": [88400, 89120, 88790, 90220, 90860, 90510, 91380] },
+  { "id": "xe-bank-tax", "accountName": "Tax Savings", "bankName": "Blue Ocean Bank", "accountNumber": "3317", "type": "savings", "currentBalance": 38950, "availableBalance": 38950, "currency": "USD", "lastReconciled": "2026-05-12", "unreconciledCount": 0, "color": "#10B981", "sparkline": [37100, 37440, 37950, 38120, 38480, 38640, 38950] },
+  { "id": "xe-bank-card", "accountName": "Corporate Card", "bankName": "Summit Cards", "accountNumber": "6402", "type": "credit", "currentBalance": -5218.42, "availableBalance": 14781.58, "currency": "USD", "lastReconciled": "2026-05-15", "unreconciledCount": 5, "color": "#F97316", "sparkline": [-4100, -4380, -4920, -4705, -5110, -4980, -5218] }
+]

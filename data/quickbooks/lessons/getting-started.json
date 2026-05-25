@@ -1,0 +1,201 @@
+{
+  "platform": "quickbooks",
+  "module": "getting-started",
+  "lessons": [
+    {
+      "id": "company-setup",
+      "title": "Setting Up Your Company",
+      "platform": "quickbooks",
+      "module": "getting-started",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Enter the company name",
+          "instruction": "Type Greenline Studio into the Company name field.",
+          "highlightTarget": "setup-company-name",
+          "action": {
+            "type": "input",
+            "target": "setup-company-name",
+            "expectedValue": "Greenline Studio",
+            "feedback": {
+              "correct": "Great. QuickBooks now knows which company file you are setting up.",
+              "incorrect": "Enter Greenline Studio in the Company name field."
+            }
+          },
+          "simulatorState": "company-setup"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose the industry",
+          "instruction": "Open the Industry dropdown and choose Professional services.",
+          "highlightTarget": "setup-industry",
+          "action": {
+            "type": "select",
+            "target": "setup-industry",
+            "expectedValue": "professional-services",
+            "feedback": {
+              "correct": "Industry selected. QuickBooks uses this to suggest accounts and reports.",
+              "incorrect": "Choose Professional services from the Industry dropdown."
+            }
+          },
+          "simulatorState": "company-setup"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Save the setup",
+          "instruction": "Click Save to finish the simulated company setup.",
+          "highlightTarget": "setup-save",
+          "action": {
+            "type": "click",
+            "target": "setup-save",
+            "feedback": {
+              "correct": "Company setup saved.",
+              "incorrect": "Click the green Save button."
+            }
+          },
+          "simulatorState": "company-setup"
+        }
+      ],
+      "quiz": {
+        "question": "Why does QuickBooks ask for an industry during setup?",
+        "options": ["To suggest useful accounts and reports", "To connect a bank automatically", "To create payroll checks", "To send invoices immediately"],
+        "correctAnswer": "To suggest useful accounts and reports",
+        "explanation": "Industry details help QuickBooks tailor the chart of accounts and setup recommendations."
+      },
+      "completionMessage": "You set up the core company profile for a QuickBooks Online file."
+    },
+    {
+      "id": "dashboard-navigation",
+      "title": "Dashboard Navigation",
+      "platform": "quickbooks",
+      "module": "getting-started",
+      "type": "guided",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Review sales activity",
+          "instruction": "Click the Sales card to review customer activity.",
+          "highlightTarget": "dashboard-sales-card",
+          "action": {
+            "type": "click",
+            "target": "dashboard-sales-card",
+            "feedback": {
+              "correct": "Sales activity opened.",
+              "incorrect": "Look for the Sales card in the dashboard content area."
+            }
+          },
+          "simulatorState": "dashboard"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Check banking",
+          "instruction": "Click the Banking card to see bank feed status.",
+          "highlightTarget": "dashboard-bank-card",
+          "action": {
+            "type": "click",
+            "target": "dashboard-bank-card",
+            "feedback": {
+              "correct": "Banking status is visible.",
+              "incorrect": "Select the Banking card near the cash-flow summary."
+            }
+          },
+          "simulatorState": "dashboard"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Open settings",
+          "instruction": "Click the settings gear in the top bar.",
+          "highlightTarget": "dashboard-settings",
+          "action": {
+            "type": "click",
+            "target": "dashboard-settings",
+            "feedback": {
+              "correct": "The settings area is where company preferences live.",
+              "incorrect": "Click the gear icon on the top right."
+            }
+          },
+          "simulatorState": "dashboard"
+        }
+      ],
+      "quiz": {
+        "question": "Where do you usually find company preferences in QuickBooks Online?",
+        "options": ["The settings gear", "The Sales card", "The Banking card", "The customer list"],
+        "correctAnswer": "The settings gear",
+        "explanation": "The gear icon opens settings and company preference tools."
+      },
+      "completionMessage": "You toured the key dashboard areas used in everyday QuickBooks work."
+    },
+    {
+      "id": "chart-of-accounts-overview",
+      "title": "Chart of Accounts Overview",
+      "platform": "quickbooks",
+      "module": "getting-started",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open the chart",
+          "instruction": "Click the Chart of accounts row in the Accounting center.",
+          "highlightTarget": "accounts-chart-row",
+          "action": {
+            "type": "click",
+            "target": "accounts-chart-row",
+            "feedback": {
+              "correct": "The chart lists the accounts used to classify activity.",
+              "incorrect": "Click the row labeled Chart of accounts."
+            }
+          },
+          "simulatorState": "chart-of-accounts"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Start a new account",
+          "instruction": "Click New to begin adding an account.",
+          "highlightTarget": "accounts-new-account",
+          "action": {
+            "type": "click",
+            "target": "accounts-new-account",
+            "feedback": {
+              "correct": "A new account drawer is ready.",
+              "incorrect": "Click the green New button above the account list."
+            }
+          },
+          "simulatorState": "chart-of-accounts"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Choose account type",
+          "instruction": "Set the account type to Income.",
+          "highlightTarget": "accounts-detail-type",
+          "action": {
+            "type": "select",
+            "target": "accounts-detail-type",
+            "expectedValue": "income",
+            "feedback": {
+              "correct": "Income accounts track money earned from customers.",
+              "incorrect": "Choose Income from the Account type menu."
+            }
+          },
+          "simulatorState": "chart-of-accounts"
+        }
+      ],
+      "quiz": {
+        "question": "What is the chart of accounts used for?",
+        "options": ["Classifying financial activity", "Sending email reminders", "Approving payroll", "Changing the app theme"],
+        "correctAnswer": "Classifying financial activity",
+        "explanation": "Every transaction posts to one or more accounts so reports can summarize financial activity."
+      },
+      "completionMessage": "You reviewed the role of accounts and added the first pieces of an account setup."
+    }
+  ]
+}

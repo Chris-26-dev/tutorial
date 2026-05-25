@@ -1,0 +1,38 @@
+[
+  {
+    "id": "qb-checking-001",
+    "name": "Operating Checking",
+    "accountNumber": "1042",
+    "bankName": "Greenline Bank",
+    "type": "checking",
+    "currentBalance": 84620.45,
+    "availableBalance": 83970.45,
+    "currency": "USD",
+    "lastReconciled": "2026-05-18",
+    "color": "#2CA01C"
+  },
+  {
+    "id": "qb-savings-001",
+    "name": "Tax Reserve Savings",
+    "accountNumber": "7788",
+    "bankName": "Greenline Bank",
+    "type": "savings",
+    "currentBalance": 42150,
+    "availableBalance": 42150,
+    "currency": "USD",
+    "lastReconciled": "2026-05-10",
+    "color": "#4D9DE0"
+  },
+  {
+    "id": "qb-credit-001",
+    "name": "Business Rewards Card",
+    "accountNumber": "4421",
+    "bankName": "Metro Commercial Card",
+    "type": "credit",
+    "currentBalance": -6420.88,
+    "availableBalance": 18579.12,
+    "currency": "USD",
+    "lastReconciled": "2026-05-16",
+    "color": "#F59E0B"
+  }
+]

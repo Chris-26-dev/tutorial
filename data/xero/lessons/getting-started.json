@@ -1,0 +1,201 @@
+{
+  "platform": "xero",
+  "module": "getting-started",
+  "lessons": [
+    {
+      "id": "organisation-setup",
+      "title": "Organisation Setup",
+      "platform": "xero",
+      "module": "getting-started",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Enter organisation name",
+          "instruction": "Type Bluebird Consulting into the Organisation name field.",
+          "highlightTarget": "organisation-name",
+          "action": {
+            "type": "input",
+            "target": "organisation-name",
+            "expectedValue": "Bluebird Consulting",
+            "feedback": {
+              "correct": "Organisation name entered.",
+              "incorrect": "Enter Bluebird Consulting in the Organisation name field."
+            }
+          },
+          "simulatorState": "company-setup"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose timezone",
+          "instruction": "Set the timezone to America/New York.",
+          "highlightTarget": "organisation-timezone",
+          "action": {
+            "type": "select",
+            "target": "organisation-timezone",
+            "expectedValue": "america-new-york",
+            "feedback": {
+              "correct": "Timezone selected.",
+              "incorrect": "Choose America/New York from the timezone menu."
+            }
+          },
+          "simulatorState": "company-setup"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Save organisation",
+          "instruction": "Click Save organisation.",
+          "highlightTarget": "organisation-save",
+          "action": {
+            "type": "click",
+            "target": "organisation-save",
+            "feedback": {
+              "correct": "Organisation setup saved.",
+              "incorrect": "Click Save organisation."
+            }
+          },
+          "simulatorState": "company-setup"
+        }
+      ],
+      "quiz": {
+        "question": "Why should the organisation timezone be correct in Xero?",
+        "options": ["It affects dates and reporting periods", "It turns on payroll automatically", "It connects every bank", "It changes supplier names"],
+        "correctAnswer": "It affects dates and reporting periods",
+        "explanation": "Timezone settings help Xero display dates and period boundaries consistently."
+      },
+      "completionMessage": "You set up a simulated Xero organisation profile."
+    },
+    {
+      "id": "dashboard-navigation",
+      "title": "Dashboard Navigation",
+      "platform": "xero",
+      "module": "getting-started",
+      "type": "guided",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open watchlist",
+          "instruction": "Click the Account watchlist panel.",
+          "highlightTarget": "dashboard-account-watchlist",
+          "action": {
+            "type": "click",
+            "target": "dashboard-account-watchlist",
+            "feedback": {
+              "correct": "Account watchlist opened.",
+              "incorrect": "Click Account watchlist on the dashboard."
+            }
+          },
+          "simulatorState": "dashboard"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Review bank account",
+          "instruction": "Click the Business Bank card.",
+          "highlightTarget": "dashboard-bank-account",
+          "action": {
+            "type": "click",
+            "target": "dashboard-bank-account",
+            "feedback": {
+              "correct": "Bank account details are visible.",
+              "incorrect": "Click the Business Bank dashboard card."
+            }
+          },
+          "simulatorState": "dashboard"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Open business menu",
+          "instruction": "Click the Business menu in the top navigation.",
+          "highlightTarget": "dashboard-business-menu",
+          "action": {
+            "type": "click",
+            "target": "dashboard-business-menu",
+            "feedback": {
+              "correct": "The Business menu is where invoices, bills, and products live.",
+              "incorrect": "Click Business in the top navigation."
+            }
+          },
+          "simulatorState": "dashboard"
+        }
+      ],
+      "quiz": {
+        "question": "Where does Xero group invoices and bills?",
+        "options": ["Business menu", "Payroll only", "Account watchlist", "Help menu"],
+        "correctAnswer": "Business menu",
+        "explanation": "The Business menu includes invoices, bills to pay, quotes, and related workflows."
+      },
+      "completionMessage": "You navigated the key areas of the Xero dashboard."
+    },
+    {
+      "id": "chart-of-accounts",
+      "title": "Chart of Accounts",
+      "platform": "xero",
+      "module": "getting-started",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open accounts",
+          "instruction": "Click Chart of accounts in Accounting.",
+          "highlightTarget": "accounts-chart-row",
+          "action": {
+            "type": "click",
+            "target": "accounts-chart-row",
+            "feedback": {
+              "correct": "Chart of accounts opened.",
+              "incorrect": "Click Chart of accounts in the Accounting area."
+            }
+          },
+          "simulatorState": "chart-of-accounts"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Add account",
+          "instruction": "Click Add account.",
+          "highlightTarget": "accounts-new-account",
+          "action": {
+            "type": "click",
+            "target": "accounts-new-account",
+            "feedback": {
+              "correct": "New account form opened.",
+              "incorrect": "Click Add account above the account table."
+            }
+          },
+          "simulatorState": "chart-of-accounts"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Choose type",
+          "instruction": "Set account type to Revenue.",
+          "highlightTarget": "accounts-detail-type",
+          "action": {
+            "type": "select",
+            "target": "accounts-detail-type",
+            "expectedValue": "income",
+            "feedback": {
+              "correct": "Revenue account type selected.",
+              "incorrect": "Choose Revenue from the account type menu."
+            }
+          },
+          "simulatorState": "chart-of-accounts"
+        }
+      ],
+      "quiz": {
+        "question": "What is an account code used for in Xero?",
+        "options": ["Identifying accounts in reports and transactions", "Sending bank passwords", "Approving leave requests", "Changing dashboard colors"],
+        "correctAnswer": "Identifying accounts in reports and transactions",
+        "explanation": "Account codes help organize the chart of accounts and transaction postings."
+      },
+      "completionMessage": "You reviewed Xero's chart of accounts workflow."
+    }
+  ]
+}

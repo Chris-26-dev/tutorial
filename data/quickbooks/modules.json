@@ -1,0 +1,241 @@
+{
+  "platform": "quickbooks",
+  "modules": [
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "description": "Set up your company and navigate the dashboard.",
+      "icon": "layout-dashboard",
+      "order": 1,
+      "estimatedMinutes": 22,
+      "lessons": [
+        {
+          "id": "company-setup",
+          "title": "Setting Up Your Company",
+          "description": "Enter business details and preferences.",
+          "order": 1,
+          "estimatedMinutes": 7,
+          "type": "interactive"
+        },
+        {
+          "id": "dashboard-navigation",
+          "title": "Dashboard Navigation",
+          "description": "Use the dashboard, shortcuts, and navigation.",
+          "order": 2,
+          "estimatedMinutes": 7,
+          "type": "guided"
+        },
+        {
+          "id": "chart-of-accounts-overview",
+          "title": "Chart of Accounts Overview",
+          "description": "Review accounts and understand account types.",
+          "order": 3,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        }
+      ]
+    },
+    {
+      "id": "invoicing",
+      "title": "Invoicing",
+      "description": "Create, send, and collect customer invoices.",
+      "icon": "file-text",
+      "order": 2,
+      "estimatedMinutes": 32,
+      "lessons": [
+        {
+          "id": "creating-an-invoice",
+          "title": "Creating an Invoice",
+          "description": "Build a sales invoice from the New menu.",
+          "order": 1,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "sending-to-customer",
+          "title": "Sending to Customer",
+          "description": "Preview and email an invoice.",
+          "order": 2,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "recording-a-payment",
+          "title": "Recording a Payment",
+          "description": "Apply a customer payment to an invoice.",
+          "order": 3,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "credit-memos",
+          "title": "Credit Memos",
+          "description": "Create a customer credit memo.",
+          "order": 4,
+          "estimatedMinutes": 8,
+          "type": "guided"
+        }
+      ]
+    },
+    {
+      "id": "expenses",
+      "title": "Expenses",
+      "description": "Track purchases, receipts, categories, and bills.",
+      "icon": "receipt",
+      "order": 3,
+      "estimatedMinutes": 30,
+      "lessons": [
+        {
+          "id": "recording-an-expense",
+          "title": "Recording an Expense",
+          "description": "Enter a business expense with a category.",
+          "order": 1,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "uploading-a-receipt",
+          "title": "Uploading a Receipt",
+          "description": "Attach a receipt to a transaction.",
+          "order": 2,
+          "estimatedMinutes": 7,
+          "type": "interactive"
+        },
+        {
+          "id": "categorizing-expenses",
+          "title": "Categorizing Expenses",
+          "description": "Review bank feed items and assign categories.",
+          "order": 3,
+          "estimatedMinutes": 7,
+          "type": "interactive"
+        },
+        {
+          "id": "bill-payment",
+          "title": "Bill Payment",
+          "description": "Record and pay a vendor bill.",
+          "order": 4,
+          "estimatedMinutes": 8,
+          "type": "guided"
+        }
+      ]
+    },
+    {
+      "id": "banking",
+      "title": "Banking",
+      "description": "Connect accounts, review feeds, match, and reconcile.",
+      "icon": "landmark",
+      "order": 4,
+      "estimatedMinutes": 34,
+      "lessons": [
+        {
+          "id": "connecting-a-bank-account",
+          "title": "Connecting a Bank Account",
+          "description": "Add a bank feed for a checking account.",
+          "order": 1,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "reviewing-transactions",
+          "title": "Reviewing Transactions",
+          "description": "Accept categorized transactions from the feed.",
+          "order": 2,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "bank-reconciliation",
+          "title": "Bank Reconciliation",
+          "description": "Compare books to a bank statement.",
+          "order": 3,
+          "estimatedMinutes": 10,
+          "type": "interactive"
+        },
+        {
+          "id": "matching-transactions",
+          "title": "Matching Transactions",
+          "description": "Match bank feed items to existing records.",
+          "order": 4,
+          "estimatedMinutes": 8,
+          "type": "guided"
+        }
+      ]
+    },
+    {
+      "id": "payroll",
+      "title": "Payroll",
+      "description": "Add employees, run payroll, and review taxes.",
+      "icon": "users",
+      "order": 5,
+      "estimatedMinutes": 24,
+      "lessons": [
+        {
+          "id": "adding-an-employee",
+          "title": "Adding an Employee",
+          "description": "Create an employee profile for payroll.",
+          "order": 1,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "running-payroll",
+          "title": "Running Payroll",
+          "description": "Preview and submit a pay run.",
+          "order": 2,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "payroll-taxes-overview",
+          "title": "Payroll Taxes Overview",
+          "description": "Review payroll liabilities and tax reminders.",
+          "order": 3,
+          "estimatedMinutes": 8,
+          "type": "guided"
+        }
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "Reports",
+      "description": "Run, read, and customize core financial reports.",
+      "icon": "bar-chart-3",
+      "order": 6,
+      "estimatedMinutes": 32,
+      "lessons": [
+        {
+          "id": "profit-loss-report",
+          "title": "Profit & Loss Report",
+          "description": "Open and run a Profit & Loss report.",
+          "order": 1,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "balance-sheet",
+          "title": "Balance Sheet",
+          "description": "Review assets, liabilities, and equity.",
+          "order": 2,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "cash-flow-statement",
+          "title": "Cash Flow Statement",
+          "description": "Track cash movement by activity.",
+          "order": 3,
+          "estimatedMinutes": 8,
+          "type": "guided"
+        },
+        {
+          "id": "customizing-reports",
+          "title": "Customizing Reports",
+          "description": "Adjust period, basis, and columns.",
+          "order": 4,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "atlas-labs",
+    "name": "Atlas Labs",
+    "email": "accounts@atlaslabs.example",
+    "type": "customer"
+  },
+  {
+    "id": "bright-office",
+    "name": "Bright Office Supplies",
+    "email": "billing@brightoffice.example",
+    "type": "supplier"
+  },
+  {
+    "id": "morgan-lee",
+    "name": "Morgan Lee",
+    "email": "morgan.lee@example",
+    "type": "employee"
+  }
+]

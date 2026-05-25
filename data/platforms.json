@@ -1,0 +1,20 @@
+[
+  {
+    "id": "quickbooks",
+    "name": "QuickBooks Online",
+    "description": "Practice company setup, sales, expenses, banking, payroll, and reports in a QuickBooks-style workspace.",
+    "href": "/learn/quickbooks",
+    "accent": "#2CA01C",
+    "sidebar": "#2B3A52",
+    "surface": "#F4F5F7"
+  },
+  {
+    "id": "xero",
+    "name": "Xero",
+    "description": "Learn organisation setup, invoicing, bills, bank reconciliation, payroll, and reporting in a Xero-style workspace.",
+    "href": "/learn/xero",
+    "accent": "#00B4D8",
+    "sidebar": "#1C2B4A",
+    "surface": "#F5F6FA"
+  }
+]

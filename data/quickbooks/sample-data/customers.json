@@ -1,0 +1,20 @@
+[
+  {
+    "id": "acme-corp",
+    "name": "Acme Corp",
+    "email": "ap@acmecorp.example",
+    "balance": 1240
+  },
+  {
+    "id": "harbor-design",
+    "name": "Harbor Design Co",
+    "email": "billing@harbordesign.example",
+    "balance": 680
+  },
+  {
+    "id": "northstar-studio",
+    "name": "Northstar Studio",
+    "email": "finance@northstar.example",
+    "balance": 0
+  }
+]

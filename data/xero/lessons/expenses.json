@@ -1,0 +1,315 @@
+{
+  "platform": "xero",
+  "module": "expenses",
+  "lessons": [
+    {
+      "id": "creating-a-bill",
+      "title": "Creating a Bill",
+      "platform": "xero",
+      "module": "expenses",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Create bill",
+          "instruction": "Click New bill.",
+          "highlightTarget": "bill-create",
+          "action": {
+            "type": "click",
+            "target": "bill-create",
+            "feedback": {
+              "correct": "Bill form opened.",
+              "incorrect": "Click New bill in Bills to pay."
+            }
+          },
+          "simulatorState": "bill-payment"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose supplier",
+          "instruction": "Select Bright Office Supplies as the supplier.",
+          "highlightTarget": "expense-payee",
+          "action": {
+            "type": "select",
+            "target": "expense-payee",
+            "expectedValue": "bright-office",
+            "feedback": {
+              "correct": "Supplier selected.",
+              "incorrect": "Choose Bright Office Supplies from the supplier field."
+            }
+          },
+          "simulatorState": "bill-payment"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Set due date",
+          "instruction": "Click the Due date field.",
+          "highlightTarget": "bill-due-date",
+          "action": {
+            "type": "click",
+            "target": "bill-due-date",
+            "feedback": {
+              "correct": "Due date reviewed.",
+              "incorrect": "Click the Due date field."
+            }
+          },
+          "simulatorState": "bill-payment"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Approve bill",
+          "instruction": "Click Approve.",
+          "highlightTarget": "bill-pay",
+          "action": {
+            "type": "click",
+            "target": "bill-pay",
+            "feedback": {
+              "correct": "Bill approved.",
+              "incorrect": "Click Approve on the bill."
+            }
+          },
+          "simulatorState": "bill-payment"
+        }
+      ],
+      "quiz": {
+        "question": "What is a supplier bill used for?",
+        "options": ["Tracking money owed to suppliers", "Sending customer quotes only", "Changing bank passwords", "Approving employee leave"],
+        "correctAnswer": "Tracking money owed to suppliers",
+        "explanation": "Bills track supplier payables until they are paid."
+      },
+      "completionMessage": "You created and approved a supplier bill."
+    },
+    {
+      "id": "expense-claims",
+      "title": "Expense Claims",
+      "platform": "xero",
+      "module": "expenses",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Start claim",
+          "instruction": "Click New expense claim.",
+          "highlightTarget": "claim-new",
+          "action": {
+            "type": "click",
+            "target": "claim-new",
+            "feedback": {
+              "correct": "Expense claim form opened.",
+              "incorrect": "Click New expense claim."
+            }
+          },
+          "simulatorState": "expense-form"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose employee",
+          "instruction": "Select Morgan Lee as the claimant.",
+          "highlightTarget": "claim-employee",
+          "action": {
+            "type": "select",
+            "target": "claim-employee",
+            "expectedValue": "morgan-lee",
+            "feedback": {
+              "correct": "Claimant selected.",
+              "incorrect": "Choose Morgan Lee from the claimant dropdown."
+            }
+          },
+          "simulatorState": "expense-form"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Attach receipt",
+          "instruction": "Click Upload receipt.",
+          "highlightTarget": "receipt-upload-button",
+          "action": {
+            "type": "click",
+            "target": "receipt-upload-button",
+            "feedback": {
+              "correct": "Receipt attached to the claim.",
+              "incorrect": "Click Upload receipt."
+            }
+          },
+          "simulatorState": "expense-form"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Submit claim",
+          "instruction": "Click Submit claim.",
+          "highlightTarget": "claim-submit",
+          "action": {
+            "type": "click",
+            "target": "claim-submit",
+            "feedback": {
+              "correct": "Expense claim submitted.",
+              "incorrect": "Click Submit claim at the bottom of the form."
+            }
+          },
+          "simulatorState": "expense-form"
+        }
+      ],
+      "quiz": {
+        "question": "Who is usually reimbursed from an expense claim?",
+        "options": ["The employee who paid out of pocket", "A customer receiving an invoice", "A bank statement line", "A report template"],
+        "correctAnswer": "The employee who paid out of pocket",
+        "explanation": "Expense claims reimburse employees for approved business spending."
+      },
+      "completionMessage": "You prepared and submitted an expense claim."
+    },
+    {
+      "id": "spend-money",
+      "title": "Spend Money",
+      "platform": "xero",
+      "module": "expenses",
+      "type": "interactive",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Open spend money",
+          "instruction": "Click Spend money.",
+          "highlightTarget": "expense-new",
+          "action": {
+            "type": "click",
+            "target": "expense-new",
+            "feedback": {
+              "correct": "Spend money form opened.",
+              "incorrect": "Click Spend money in the bank account actions."
+            }
+          },
+          "simulatorState": "expense-form"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose payee",
+          "instruction": "Select Bright Office Supplies as the payee.",
+          "highlightTarget": "expense-payee",
+          "action": {
+            "type": "select",
+            "target": "expense-payee",
+            "expectedValue": "bright-office",
+            "feedback": {
+              "correct": "Payee selected.",
+              "incorrect": "Choose Bright Office Supplies from the payee dropdown."
+            }
+          },
+          "simulatorState": "expense-form"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Choose account",
+          "instruction": "Set the account to Office expenses.",
+          "highlightTarget": "expense-category",
+          "action": {
+            "type": "select",
+            "target": "expense-category",
+            "expectedValue": "office-expenses",
+            "feedback": {
+              "correct": "Account selected.",
+              "incorrect": "Choose Office expenses from the account field."
+            }
+          },
+          "simulatorState": "expense-form"
+        },
+        {
+          "id": "step-4",
+          "order": 4,
+          "title": "Save spend money",
+          "instruction": "Click Save transaction.",
+          "highlightTarget": "expense-save",
+          "action": {
+            "type": "click",
+            "target": "expense-save",
+            "feedback": {
+              "correct": "Spend money transaction saved.",
+              "incorrect": "Click Save transaction."
+            }
+          },
+          "simulatorState": "expense-form"
+        }
+      ],
+      "quiz": {
+        "question": "When is Spend money commonly used?",
+        "options": ["For direct bank payments already made", "For creating a customer invoice", "For approving payroll leave", "For changing organisation name"],
+        "correctAnswer": "For direct bank payments already made",
+        "explanation": "Spend money records payments that have already left a bank account."
+      },
+      "completionMessage": "You recorded a direct spend money transaction."
+    },
+    {
+      "id": "batch-payments",
+      "title": "Batch Payments",
+      "platform": "xero",
+      "module": "expenses",
+      "type": "guided",
+      "steps": [
+        {
+          "id": "step-1",
+          "order": 1,
+          "title": "Select bills",
+          "instruction": "Click the checkbox beside Bright Office Supplies.",
+          "highlightTarget": "batch-select-bills",
+          "action": {
+            "type": "click",
+            "target": "batch-select-bills",
+            "feedback": {
+              "correct": "Bill selected for the batch.",
+              "incorrect": "Click the checkbox beside Bright Office Supplies."
+            }
+          },
+          "simulatorState": "bill-payment"
+        },
+        {
+          "id": "step-2",
+          "order": 2,
+          "title": "Choose payment account",
+          "instruction": "Choose Business Bank as the payment account.",
+          "highlightTarget": "batch-payment-account",
+          "action": {
+            "type": "select",
+            "target": "batch-payment-account",
+            "expectedValue": "business-bank",
+            "feedback": {
+              "correct": "Business Bank selected.",
+              "incorrect": "Choose Business Bank from the payment account menu."
+            }
+          },
+          "simulatorState": "bill-payment"
+        },
+        {
+          "id": "step-3",
+          "order": 3,
+          "title": "Make batch payment",
+          "instruction": "Click Make payment.",
+          "highlightTarget": "batch-pay",
+          "action": {
+            "type": "click",
+            "target": "batch-pay",
+            "feedback": {
+              "correct": "Batch payment prepared.",
+              "incorrect": "Click Make payment."
+            }
+          },
+          "simulatorState": "bill-payment"
+        }
+      ],
+      "quiz": {
+        "question": "Why use a batch payment?",
+        "options": ["To pay multiple supplier bills together", "To create a sales invoice", "To run a P&L report", "To add a bank account logo"],
+        "correctAnswer": "To pay multiple supplier bills together",
+        "explanation": "Batch payments group payable bills into one payment workflow."
+      },
+      "completionMessage": "You prepared a supplier batch payment."
+    }
+  ]
+}

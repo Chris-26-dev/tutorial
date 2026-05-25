@@ -1,0 +1,241 @@
+{
+  "platform": "xero",
+  "modules": [
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "description": "Set up your organisation and learn the Xero dashboard.",
+      "icon": "layout-dashboard",
+      "order": 1,
+      "estimatedMinutes": 22,
+      "lessons": [
+        {
+          "id": "organisation-setup",
+          "title": "Organisation Setup",
+          "description": "Enter organisation details and settings.",
+          "order": 1,
+          "estimatedMinutes": 7,
+          "type": "interactive"
+        },
+        {
+          "id": "dashboard-navigation",
+          "title": "Dashboard Navigation",
+          "description": "Use the account watchlist and business menu.",
+          "order": 2,
+          "estimatedMinutes": 7,
+          "type": "guided"
+        },
+        {
+          "id": "chart-of-accounts",
+          "title": "Chart of Accounts",
+          "description": "Review account codes and account types.",
+          "order": 3,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        }
+      ]
+    },
+    {
+      "id": "invoicing",
+      "title": "Invoicing",
+      "description": "Create, approve, send, and collect sales invoices.",
+      "icon": "file-text",
+      "order": 2,
+      "estimatedMinutes": 32,
+      "lessons": [
+        {
+          "id": "creating-a-sales-invoice",
+          "title": "Creating a Sales Invoice",
+          "description": "Create a sales invoice from the Business menu.",
+          "order": 1,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "approving-and-sending",
+          "title": "Approving and Sending",
+          "description": "Approve and email a sales invoice.",
+          "order": 2,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "recording-payment",
+          "title": "Recording Payment",
+          "description": "Apply a payment to an approved invoice.",
+          "order": 3,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "credit-notes",
+          "title": "Credit Notes",
+          "description": "Create a credit note for a customer.",
+          "order": 4,
+          "estimatedMinutes": 8,
+          "type": "guided"
+        }
+      ]
+    },
+    {
+      "id": "expenses",
+      "title": "Expenses",
+      "description": "Manage bills, claims, spend money, and payments.",
+      "icon": "receipt",
+      "order": 3,
+      "estimatedMinutes": 30,
+      "lessons": [
+        {
+          "id": "creating-a-bill",
+          "title": "Creating a Bill",
+          "description": "Record a supplier bill awaiting payment.",
+          "order": 1,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "expense-claims",
+          "title": "Expense Claims",
+          "description": "Submit an employee reimbursement claim.",
+          "order": 2,
+          "estimatedMinutes": 7,
+          "type": "interactive"
+        },
+        {
+          "id": "spend-money",
+          "title": "Spend Money",
+          "description": "Record a direct bank spend transaction.",
+          "order": 3,
+          "estimatedMinutes": 7,
+          "type": "interactive"
+        },
+        {
+          "id": "batch-payments",
+          "title": "Batch Payments",
+          "description": "Group supplier bills into a batch payment.",
+          "order": 4,
+          "estimatedMinutes": 8,
+          "type": "guided"
+        }
+      ]
+    },
+    {
+      "id": "banking",
+      "title": "Banking",
+      "description": "Add bank accounts, import statements, reconcile, and create rules.",
+      "icon": "landmark",
+      "order": 4,
+      "estimatedMinutes": 34,
+      "lessons": [
+        {
+          "id": "adding-a-bank-account",
+          "title": "Adding a Bank Account",
+          "description": "Add an operating bank account.",
+          "order": 1,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "importing-bank-statements",
+          "title": "Importing Bank Statements",
+          "description": "Import a sample statement file.",
+          "order": 2,
+          "estimatedMinutes": 8,
+          "type": "guided"
+        },
+        {
+          "id": "bank-reconciliation",
+          "title": "Bank Reconciliation",
+          "description": "Reconcile statement lines to Xero transactions.",
+          "order": 3,
+          "estimatedMinutes": 10,
+          "type": "interactive"
+        },
+        {
+          "id": "creating-rules",
+          "title": "Creating Rules",
+          "description": "Create a bank rule for recurring transactions.",
+          "order": 4,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        }
+      ]
+    },
+    {
+      "id": "payroll",
+      "title": "Payroll",
+      "description": "Add employees, process pay runs, and manage leave.",
+      "icon": "users",
+      "order": 5,
+      "estimatedMinutes": 24,
+      "lessons": [
+        {
+          "id": "adding-employees",
+          "title": "Adding Employees",
+          "description": "Create an employee profile.",
+          "order": 1,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "processing-pay-runs",
+          "title": "Processing Pay Runs",
+          "description": "Post a pay run for review.",
+          "order": 2,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "leave-management",
+          "title": "Leave Management",
+          "description": "Review and approve a leave request.",
+          "order": 3,
+          "estimatedMinutes": 8,
+          "type": "guided"
+        }
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "Reports",
+      "description": "Run financial reports and manage budgets.",
+      "icon": "bar-chart-3",
+      "order": 6,
+      "estimatedMinutes": 32,
+      "lessons": [
+        {
+          "id": "profit-loss",
+          "title": "Profit & Loss",
+          "description": "Open and run the Profit and Loss report.",
+          "order": 1,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "balance-sheet",
+          "title": "Balance Sheet",
+          "description": "Review financial position by account type.",
+          "order": 2,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        },
+        {
+          "id": "aged-receivables",
+          "title": "Aged Receivables",
+          "description": "Review overdue customer balances.",
+          "order": 3,
+          "estimatedMinutes": 8,
+          "type": "guided"
+        },
+        {
+          "id": "budget-manager",
+          "title": "Budget Manager",
+          "description": "Compare budget values to actual results.",
+          "order": 4,
+          "estimatedMinutes": 8,
+          "type": "interactive"
+        }
+      ]
+    }
+  ]
+}
